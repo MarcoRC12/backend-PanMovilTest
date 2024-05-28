@@ -1,0 +1,1384 @@
+CRITICAL - 2023-05-30 06:49:25 --> Class 'App\Models\VentasModel' not found
+in APPPATH\Controllers\Ventas.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->index()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-30 06:49:46 --> Class 'App\Models\VentasModel' not found
+in APPPATH\Controllers\Ventas.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->index()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-30 06:50:04 --> Class 'App\Models\VentasModel' not found
+in APPPATH\Controllers\Ventas.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->index()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-30 06:50:57 --> Class 'App\Models\VentasModel' not found
+in APPPATH\Controllers\Ventas.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->index()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-30 06:52:21 --> Class 'App\Models\VentasModel' not found
+in APPPATH\Controllers\Ventas.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->index()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-30 06:52:29 --> Class 'App\Models\VentasModel' not found
+in APPPATH\Controllers\Ventas.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->index()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-30 06:54:16 --> Class 'App\Models\VentasModel' not found
+in APPPATH\Controllers\Ventas.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->index()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-30 06:59:57 --> mysqli_sql_exception: Unknown column 'c.cl_id' in 'on clause' in C:\xampp\htdocs\breadandfred\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\breadandfred\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\breadandfred\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\breadandfred\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\breadandfred\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\breadandfred\app\Models\VentasModel.php(20): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\breadandfred\app\Controllers\Ventas.php(18): App\Models\VentasModel->getVentas()
+#6 C:\xampp\htdocs\breadandfred\system\CodeIgniter.php(934): App\Controllers\Ventas->index()
+#7 C:\xampp\htdocs\breadandfred\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+#8 C:\xampp\htdocs\breadandfred\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\breadandfred\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-05-30 06:59:57 --> Unknown column 'c.cl_id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `ventas` `v`
+JOIN `tipo_pago` `tp` ON `v`.`tp_id` = `tp`.`tp_id`
+JOIN `clientes` `c` ON `v`.`cl_id` = `c`.`cl_id`
+WHERE `v`.`ve_estado` = 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `ventas` `v`
+JOIN `tipo_pago` `tp` ON `v`.`tp_id` = `tp`.`tp_id`
+JOIN `clientes` `c` ON `v`.`cl_id` = `c`.`cl_id`
+WHERE `v`.`ve_estado` = 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `ventas` `v`
+JOIN `tipo_pago` `tp` ON `v`.`tp_id` = `tp`.`tp_id`
+JOIN `clientes` `c` ON `v`.`cl_id` = `c`.`cl_id`
+WHERE `v`.`ve_estado` = 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `ventas` `v`
+JOIN `tipo_pago` `tp` ON `v`.`tp_id` = `tp`.`tp_id`
+JOIN `clientes` `c` ON `v`.`cl_id` = `c`.`cl_id`
+WHERE `v`.`ve_estado` = :v.ve_estado:', [...], false)
+ 5 APPPATH\Models\VentasModel.php(20): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Ventas.php(18): App\Models\VentasModel->getVentas()
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-30 07:00:29 --> mysqli_sql_exception: Unknown column 'c.clientes_id' in 'on clause' in C:\xampp\htdocs\breadandfred\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\breadandfred\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\breadandfred\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\breadandfred\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\breadandfred\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\breadandfred\app\Models\VentasModel.php(20): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\breadandfred\app\Controllers\Ventas.php(18): App\Models\VentasModel->getVentas()
+#6 C:\xampp\htdocs\breadandfred\system\CodeIgniter.php(934): App\Controllers\Ventas->index()
+#7 C:\xampp\htdocs\breadandfred\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+#8 C:\xampp\htdocs\breadandfred\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\breadandfred\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-05-30 07:00:29 --> Unknown column 'c.clientes_id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `ventas` `v`
+JOIN `tipo_pago` `tp` ON `v`.`tp_id` = `tp`.`tp_id`
+JOIN `clientes` `c` ON `v`.`cl_id` = `c`.`clientes_id`
+WHERE `v`.`ve_estado` = 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `ventas` `v`
+JOIN `tipo_pago` `tp` ON `v`.`tp_id` = `tp`.`tp_id`
+JOIN `clientes` `c` ON `v`.`cl_id` = `c`.`clientes_id`
+WHERE `v`.`ve_estado` = 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `ventas` `v`
+JOIN `tipo_pago` `tp` ON `v`.`tp_id` = `tp`.`tp_id`
+JOIN `clientes` `c` ON `v`.`cl_id` = `c`.`clientes_id`
+WHERE `v`.`ve_estado` = 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `ventas` `v`
+JOIN `tipo_pago` `tp` ON `v`.`tp_id` = `tp`.`tp_id`
+JOIN `clientes` `c` ON `v`.`cl_id` = `c`.`clientes_id`
+WHERE `v`.`ve_estado` = :v.ve_estado:', [...], false)
+ 5 APPPATH\Models\VentasModel.php(20): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Ventas.php(18): App\Models\VentasModel->getVentas()
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-30 16:00:17 --> mysqli_sql_exception: Unknown column 'tp_id' in 'field list' in C:\xampp\htdocs\breadandfred\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\breadandfred\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ve...', 0)
+#1 C:\xampp\htdocs\breadandfred\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ve...')
+#2 C:\xampp\htdocs\breadandfred\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ve...')
+#3 C:\xampp\htdocs\breadandfred\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ve...', Array, false)
+#4 C:\xampp\htdocs\breadandfred\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\breadandfred\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\breadandfred\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\breadandfred\app\Controllers\Ventas.php(124): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\breadandfred\system\CodeIgniter.php(934): App\Controllers\Ventas->create()
+#9 C:\xampp\htdocs\breadandfred\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+#10 C:\xampp\htdocs\breadandfred\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\breadandfred\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-05-30 16:00:17 --> Unknown column 'tp_id' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ventas` (`cl_id`, `ve_fecha`, `tp_id`, `ve_total`) VALUES (\'3\', \'2000-12-02\', \'1\', \'12.4\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ventas` (`cl_id`, `ve_fecha`, `tp_id`, `ve_total`) VALUES (\'3\', \'2000-12-02\', \'1\', \'12.4\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ventas` (`cl_id`, `ve_fecha`, `tp_id`, `ve_total`) VALUES (\'3\', \'2000-12-02\', \'1\', \'12.4\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ventas` (`cl_id`, `ve_fecha`, `tp_id`, `ve_total`) VALUES (:cl_id:, :ve_fecha:, :tp_id:, :ve_total:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Ventas.php(124): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->create()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-30 16:06:43 --> mysqli_sql_exception: Unknown column 'tp_id' in 'field list' in C:\xampp\htdocs\breadandfred\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\breadandfred\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ve...', 0)
+#1 C:\xampp\htdocs\breadandfred\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ve...')
+#2 C:\xampp\htdocs\breadandfred\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ve...')
+#3 C:\xampp\htdocs\breadandfred\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ve...', Array, false)
+#4 C:\xampp\htdocs\breadandfred\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\breadandfred\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\breadandfred\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\breadandfred\app\Controllers\Ventas.php(124): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\breadandfred\system\CodeIgniter.php(934): App\Controllers\Ventas->create()
+#9 C:\xampp\htdocs\breadandfred\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+#10 C:\xampp\htdocs\breadandfred\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\breadandfred\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-05-30 16:06:43 --> Unknown column 'tp_id' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ventas` (`cl_id`, `ve_fecha`, `tp_id`, `ve_total`) VALUES (\'3\', \'2000-12-02\', \'1\', \'12.4\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ventas` (`cl_id`, `ve_fecha`, `tp_id`, `ve_total`) VALUES (\'3\', \'2000-12-02\', \'1\', \'12.4\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ventas` (`cl_id`, `ve_fecha`, `tp_id`, `ve_total`) VALUES (\'3\', \'2000-12-02\', \'1\', \'12.4\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ventas` (`cl_id`, `ve_fecha`, `tp_id`, `ve_total`) VALUES (:cl_id:, :ve_fecha:, :tp_id:, :ve_total:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Ventas.php(124): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->create()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-30 16:07:06 --> mysqli_sql_exception: Unknown column 'tp_id' in 'field list' in C:\xampp\htdocs\breadandfred\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\breadandfred\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ve...', 0)
+#1 C:\xampp\htdocs\breadandfred\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ve...')
+#2 C:\xampp\htdocs\breadandfred\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ve...')
+#3 C:\xampp\htdocs\breadandfred\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ve...', Array, false)
+#4 C:\xampp\htdocs\breadandfred\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\breadandfred\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\breadandfred\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\breadandfred\app\Controllers\Ventas.php(124): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\breadandfred\system\CodeIgniter.php(934): App\Controllers\Ventas->create()
+#9 C:\xampp\htdocs\breadandfred\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+#10 C:\xampp\htdocs\breadandfred\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\breadandfred\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-05-30 16:07:06 --> Unknown column 'tp_id' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ventas` (`cl_id`, `ve_fecha`, `tp_id`, `ve_total`) VALUES (\'3\', \'2000-12-02\', \'1\', \'12.4\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ventas` (`cl_id`, `ve_fecha`, `tp_id`, `ve_total`) VALUES (\'3\', \'2000-12-02\', \'1\', \'12.4\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ventas` (`cl_id`, `ve_fecha`, `tp_id`, `ve_total`) VALUES (\'3\', \'2000-12-02\', \'1\', \'12.4\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ventas` (`cl_id`, `ve_fecha`, `tp_id`, `ve_total`) VALUES (:cl_id:, :ve_fecha:, :tp_id:, :ve_total:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Ventas.php(124): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->create()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-30 17:58:41 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`restful`.`productos`, CONSTRAINT `productos_ibfk_1` FOREIGN KEY (`tpro_id`) REFERENCES `tipos_productos` (`tpro_id`) ON UPDATE CASCADE) in C:\xampp\htdocs\breadandfred\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\breadandfred\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `pr...', 0)
+#1 C:\xampp\htdocs\breadandfred\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 C:\xampp\htdocs\breadandfred\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 C:\xampp\htdocs\breadandfred\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 C:\xampp\htdocs\breadandfred\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\breadandfred\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\breadandfred\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\breadandfred\app\Controllers\Productos.php(127): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\breadandfred\system\CodeIgniter.php(934): App\Controllers\Productos->create()
+#9 C:\xampp\htdocs\breadandfred\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+#10 C:\xampp\htdocs\breadandfred\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\breadandfred\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-05-30 17:58:41 --> Cannot add or update a child row: a foreign key constraint fails (`restful`.`productos`, CONSTRAINT `productos_ibfk_1` FOREIGN KEY (`tpro_id`) REFERENCES `tipos_productos` (`tpro_id`) ON UPDATE CASCADE)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `productos` (`pro_nombre`, `pro_descripcion`, `pro_PrecioUnitario`, `pro_marca`) VALUES (\'adfasdfadfaf\', \'asdfasdfasdfasdf\', \'12\', \'asfafdfafasdfasdfasdfadf\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `productos` (`pro_nombre`, `pro_descripcion`, `pro_PrecioUnitario`, `pro_marca`) VALUES (\'adfasdfadfaf\', \'asdfasdfasdfasdf\', \'12\', \'asfafdfafasdfasdfasdfadf\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `productos` (`pro_nombre`, `pro_descripcion`, `pro_PrecioUnitario`, `pro_marca`) VALUES (\'adfasdfadfaf\', \'asdfasdfasdfasdf\', \'12\', \'asfafdfafasdfasdfasdfadf\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `productos` (`pro_nombre`, `pro_descripcion`, `pro_PrecioUnitario`, `pro_marca`) VALUES (:pro_nombre:, :pro_descripcion:, :pro_PrecioUnitario:, :pro_marca:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Productos.php(127): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Productos->create()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-30 17:59:11 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`restful`.`productos`, CONSTRAINT `productos_ibfk_1` FOREIGN KEY (`tpro_id`) REFERENCES `tipos_productos` (`tpro_id`) ON UPDATE CASCADE) in C:\xampp\htdocs\breadandfred\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\breadandfred\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `pr...', 0)
+#1 C:\xampp\htdocs\breadandfred\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 C:\xampp\htdocs\breadandfred\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 C:\xampp\htdocs\breadandfred\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 C:\xampp\htdocs\breadandfred\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\breadandfred\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\breadandfred\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\breadandfred\app\Controllers\Productos.php(127): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\breadandfred\system\CodeIgniter.php(934): App\Controllers\Productos->create()
+#9 C:\xampp\htdocs\breadandfred\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+#10 C:\xampp\htdocs\breadandfred\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\breadandfred\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-05-30 17:59:11 --> Cannot add or update a child row: a foreign key constraint fails (`restful`.`productos`, CONSTRAINT `productos_ibfk_1` FOREIGN KEY (`tpro_id`) REFERENCES `tipos_productos` (`tpro_id`) ON UPDATE CASCADE)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `productos` (`pro_nombre`, `pro_descripcion`, `pro_PrecioUnitario`, `pro_marca`) VALUES (\'adfasdfadfaf\', \'asdfasdfasdfasdf\', \'12\', \'asfafdfafasdfasdfasdfadf\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `productos` (`pro_nombre`, `pro_descripcion`, `pro_PrecioUnitario`, `pro_marca`) VALUES (\'adfasdfadfaf\', \'asdfasdfasdfasdf\', \'12\', \'asfafdfafasdfasdfasdfadf\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `productos` (`pro_nombre`, `pro_descripcion`, `pro_PrecioUnitario`, `pro_marca`) VALUES (\'adfasdfadfaf\', \'asdfasdfasdfasdf\', \'12\', \'asfafdfafasdfasdfasdfadf\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `productos` (`pro_nombre`, `pro_descripcion`, `pro_PrecioUnitario`, `pro_marca`) VALUES (:pro_nombre:, :pro_descripcion:, :pro_PrecioUnitario:, :pro_marca:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Productos.php(127): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Productos->create()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-30 18:00:19 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`restful`.`productos`, CONSTRAINT `productos_ibfk_1` FOREIGN KEY (`tpro_id`) REFERENCES `tipos_productos` (`tpro_id`) ON UPDATE CASCADE) in C:\xampp\htdocs\breadandfred\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\breadandfred\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `pr...', 0)
+#1 C:\xampp\htdocs\breadandfred\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 C:\xampp\htdocs\breadandfred\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 C:\xampp\htdocs\breadandfred\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 C:\xampp\htdocs\breadandfred\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\breadandfred\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\breadandfred\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\breadandfred\app\Controllers\Productos.php(127): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\breadandfred\system\CodeIgniter.php(934): App\Controllers\Productos->create()
+#9 C:\xampp\htdocs\breadandfred\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+#10 C:\xampp\htdocs\breadandfred\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\breadandfred\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-05-30 18:00:19 --> Cannot add or update a child row: a foreign key constraint fails (`restful`.`productos`, CONSTRAINT `productos_ibfk_1` FOREIGN KEY (`tpro_id`) REFERENCES `tipos_productos` (`tpro_id`) ON UPDATE CASCADE)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `productos` (`pro_nombre`, `pro_descripcion`, `pro_PrecioUnitario`, `pro_marca`) VALUES (\'adfasdfadfaf\', \'asdfasdfasdfasdf\', \'12\', \'asfafdfafasdfasdfasdfadf\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `productos` (`pro_nombre`, `pro_descripcion`, `pro_PrecioUnitario`, `pro_marca`) VALUES (\'adfasdfadfaf\', \'asdfasdfasdfasdf\', \'12\', \'asfafdfafasdfasdfasdfadf\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `productos` (`pro_nombre`, `pro_descripcion`, `pro_PrecioUnitario`, `pro_marca`) VALUES (\'adfasdfadfaf\', \'asdfasdfasdfasdf\', \'12\', \'asfafdfafasdfasdfasdfadf\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `productos` (`pro_nombre`, `pro_descripcion`, `pro_PrecioUnitario`, `pro_marca`) VALUES (:pro_nombre:, :pro_descripcion:, :pro_PrecioUnitario:, :pro_marca:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Productos.php(127): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Productos->create()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-30 18:01:59 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`restful`.`productos`, CONSTRAINT `productos_ibfk_1` FOREIGN KEY (`tpro_id`) REFERENCES `tipos_productos` (`tpro_id`) ON UPDATE CASCADE) in C:\xampp\htdocs\breadandfred\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\breadandfred\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `pr...', 0)
+#1 C:\xampp\htdocs\breadandfred\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 C:\xampp\htdocs\breadandfred\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 C:\xampp\htdocs\breadandfred\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 C:\xampp\htdocs\breadandfred\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\breadandfred\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\breadandfred\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\breadandfred\app\Controllers\Productos.php(127): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\breadandfred\system\CodeIgniter.php(934): App\Controllers\Productos->create()
+#9 C:\xampp\htdocs\breadandfred\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+#10 C:\xampp\htdocs\breadandfred\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\breadandfred\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-05-30 18:01:59 --> Cannot add or update a child row: a foreign key constraint fails (`restful`.`productos`, CONSTRAINT `productos_ibfk_1` FOREIGN KEY (`tpro_id`) REFERENCES `tipos_productos` (`tpro_id`) ON UPDATE CASCADE)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `productos` (`pro_nombre`, `pro_descripcion`, `pro_PrecioUnitario`, `pro_marca`) VALUES (\'adfasdfadfaf\', \'asdfasdfasdfasdf\', \'12\', \'asfafdfafasdfasdfasdfadf\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `productos` (`pro_nombre`, `pro_descripcion`, `pro_PrecioUnitario`, `pro_marca`) VALUES (\'adfasdfadfaf\', \'asdfasdfasdfasdf\', \'12\', \'asfafdfafasdfasdfasdfadf\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `productos` (`pro_nombre`, `pro_descripcion`, `pro_PrecioUnitario`, `pro_marca`) VALUES (\'adfasdfadfaf\', \'asdfasdfasdfasdf\', \'12\', \'asfafdfafasdfasdfasdfadf\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `productos` (`pro_nombre`, `pro_descripcion`, `pro_PrecioUnitario`, `pro_marca`) VALUES (:pro_nombre:, :pro_descripcion:, :pro_PrecioUnitario:, :pro_marca:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Productos.php(127): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Productos->create()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-30 18:08:41 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`restful`.`stock`, CONSTRAINT `stock_ibfk_1` FOREIGN KEY (`pro_id`) REFERENCES `productos` (`pro_id`) ON UPDATE CASCADE) in C:\xampp\htdocs\breadandfred\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\breadandfred\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `st...', 0)
+#1 C:\xampp\htdocs\breadandfred\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `st...')
+#2 C:\xampp\htdocs\breadandfred\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `st...')
+#3 C:\xampp\htdocs\breadandfred\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `st...', Array, false)
+#4 C:\xampp\htdocs\breadandfred\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\breadandfred\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\breadandfred\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\breadandfred\app\Controllers\Stock.php(124): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\breadandfred\system\CodeIgniter.php(934): App\Controllers\Stock->create()
+#9 C:\xampp\htdocs\breadandfred\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Stock))
+#10 C:\xampp\htdocs\breadandfred\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\breadandfred\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-05-30 18:08:41 --> Cannot add or update a child row: a foreign key constraint fails (`restful`.`stock`, CONSTRAINT `stock_ibfk_1` FOREIGN KEY (`pro_id`) REFERENCES `productos` (`pro_id`) ON UPDATE CASCADE)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `stock` (`st_CantidadAdquirida`, `st_CantidadDisponible`, `pro_id`, `st_codigo`) VALUES (\'20\', \'20\', \'1\', \'1231231341234\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `stock` (`st_CantidadAdquirida`, `st_CantidadDisponible`, `pro_id`, `st_codigo`) VALUES (\'20\', \'20\', \'1\', \'1231231341234\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `stock` (`st_CantidadAdquirida`, `st_CantidadDisponible`, `pro_id`, `st_codigo`) VALUES (\'20\', \'20\', \'1\', \'1231231341234\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `stock` (`st_CantidadAdquirida`, `st_CantidadDisponible`, `pro_id`, `st_codigo`) VALUES (:st_CantidadAdquirida:, :st_CantidadDisponible:, :pro_id:, :st_codigo:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Stock.php(124): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Stock->create()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Stock))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-30 18:09:49 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`restful`.`stock`, CONSTRAINT `stock_ibfk_1` FOREIGN KEY (`pro_id`) REFERENCES `productos` (`pro_id`) ON UPDATE CASCADE) in C:\xampp\htdocs\breadandfred\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\breadandfred\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `st...', 0)
+#1 C:\xampp\htdocs\breadandfred\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `st...')
+#2 C:\xampp\htdocs\breadandfred\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `st...')
+#3 C:\xampp\htdocs\breadandfred\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `st...', Array, false)
+#4 C:\xampp\htdocs\breadandfred\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\breadandfred\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\breadandfred\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\breadandfred\app\Controllers\Stock.php(124): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\breadandfred\system\CodeIgniter.php(934): App\Controllers\Stock->create()
+#9 C:\xampp\htdocs\breadandfred\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Stock))
+#10 C:\xampp\htdocs\breadandfred\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\breadandfred\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-05-30 18:09:49 --> Cannot add or update a child row: a foreign key constraint fails (`restful`.`stock`, CONSTRAINT `stock_ibfk_1` FOREIGN KEY (`pro_id`) REFERENCES `productos` (`pro_id`) ON UPDATE CASCADE)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `stock` (`st_CantidadAdquirida`, `st_CantidadDisponible`, `pro_id`, `st_codigo`) VALUES (\'20\', \'20\', \'1\', \'1231231341234\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `stock` (`st_CantidadAdquirida`, `st_CantidadDisponible`, `pro_id`, `st_codigo`) VALUES (\'20\', \'20\', \'1\', \'1231231341234\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `stock` (`st_CantidadAdquirida`, `st_CantidadDisponible`, `pro_id`, `st_codigo`) VALUES (\'20\', \'20\', \'1\', \'1231231341234\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `stock` (`st_CantidadAdquirida`, `st_CantidadDisponible`, `pro_id`, `st_codigo`) VALUES (:st_CantidadAdquirida:, :st_CantidadDisponible:, :pro_id:, :st_codigo:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Stock.php(124): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Stock->create()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Stock))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-30 18:11:32 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`restful`.`stock`, CONSTRAINT `stock_ibfk_1` FOREIGN KEY (`pro_id`) REFERENCES `productos` (`pro_id`) ON UPDATE CASCADE) in C:\xampp\htdocs\breadandfred\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\breadandfred\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `st...', 0)
+#1 C:\xampp\htdocs\breadandfred\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `st...')
+#2 C:\xampp\htdocs\breadandfred\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `st...')
+#3 C:\xampp\htdocs\breadandfred\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `st...', Array, false)
+#4 C:\xampp\htdocs\breadandfred\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\breadandfred\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\breadandfred\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\breadandfred\app\Controllers\Stock.php(124): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\breadandfred\system\CodeIgniter.php(934): App\Controllers\Stock->create()
+#9 C:\xampp\htdocs\breadandfred\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Stock))
+#10 C:\xampp\htdocs\breadandfred\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\breadandfred\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-05-30 18:11:32 --> Cannot add or update a child row: a foreign key constraint fails (`restful`.`stock`, CONSTRAINT `stock_ibfk_1` FOREIGN KEY (`pro_id`) REFERENCES `productos` (`pro_id`) ON UPDATE CASCADE)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `stock` (`st_CantidadAdquirida`, `st_CantidadDisponible`, `pro_id`, `st_codigo`) VALUES (\'20\', \'20\', \'1\', \'1231231341234\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `stock` (`st_CantidadAdquirida`, `st_CantidadDisponible`, `pro_id`, `st_codigo`) VALUES (\'20\', \'20\', \'1\', \'1231231341234\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `stock` (`st_CantidadAdquirida`, `st_CantidadDisponible`, `pro_id`, `st_codigo`) VALUES (\'20\', \'20\', \'1\', \'1231231341234\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `stock` (`st_CantidadAdquirida`, `st_CantidadDisponible`, `pro_id`, `st_codigo`) VALUES (:st_CantidadAdquirida:, :st_CantidadDisponible:, :pro_id:, :st_codigo:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Stock.php(124): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Stock->create()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Stock))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-30 18:13:36 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`restful`.`stock`, CONSTRAINT `stock_ibfk_1` FOREIGN KEY (`pro_id`) REFERENCES `productos` (`pro_id`) ON UPDATE CASCADE) in C:\xampp\htdocs\breadandfred\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\breadandfred\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `st...', 0)
+#1 C:\xampp\htdocs\breadandfred\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `st...')
+#2 C:\xampp\htdocs\breadandfred\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `st...')
+#3 C:\xampp\htdocs\breadandfred\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `st...', Array, false)
+#4 C:\xampp\htdocs\breadandfred\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\breadandfred\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\breadandfred\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\breadandfred\app\Controllers\Stock.php(124): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\breadandfred\system\CodeIgniter.php(934): App\Controllers\Stock->create()
+#9 C:\xampp\htdocs\breadandfred\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Stock))
+#10 C:\xampp\htdocs\breadandfred\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\breadandfred\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-05-30 18:13:36 --> Cannot add or update a child row: a foreign key constraint fails (`restful`.`stock`, CONSTRAINT `stock_ibfk_1` FOREIGN KEY (`pro_id`) REFERENCES `productos` (`pro_id`) ON UPDATE CASCADE)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `stock` (`st_CantidadAdquirida`, `st_CantidadDisponible`, `pro_id`, `st_codigo`) VALUES (\'20\', \'20\', \'1\', \'1231231\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `stock` (`st_CantidadAdquirida`, `st_CantidadDisponible`, `pro_id`, `st_codigo`) VALUES (\'20\', \'20\', \'1\', \'1231231\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `stock` (`st_CantidadAdquirida`, `st_CantidadDisponible`, `pro_id`, `st_codigo`) VALUES (\'20\', \'20\', \'1\', \'1231231\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `stock` (`st_CantidadAdquirida`, `st_CantidadDisponible`, `pro_id`, `st_codigo`) VALUES (:st_CantidadAdquirida:, :st_CantidadDisponible:, :pro_id:, :st_codigo:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Stock.php(124): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Stock->create()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Stock))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-30 18:14:54 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`restful`.`stock`, CONSTRAINT `stock_ibfk_1` FOREIGN KEY (`pro_id`) REFERENCES `productos` (`pro_id`) ON UPDATE CASCADE) in C:\xampp\htdocs\breadandfred\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\breadandfred\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `st...', 0)
+#1 C:\xampp\htdocs\breadandfred\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `st...')
+#2 C:\xampp\htdocs\breadandfred\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `st...')
+#3 C:\xampp\htdocs\breadandfred\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `st...', Array, false)
+#4 C:\xampp\htdocs\breadandfred\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\breadandfred\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\breadandfred\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\breadandfred\app\Controllers\Stock.php(124): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\breadandfred\system\CodeIgniter.php(934): App\Controllers\Stock->create()
+#9 C:\xampp\htdocs\breadandfred\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Stock))
+#10 C:\xampp\htdocs\breadandfred\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\breadandfred\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-05-30 18:14:54 --> Cannot add or update a child row: a foreign key constraint fails (`restful`.`stock`, CONSTRAINT `stock_ibfk_1` FOREIGN KEY (`pro_id`) REFERENCES `productos` (`pro_id`) ON UPDATE CASCADE)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `stock` (`st_CantidadAdquirida`, `st_CantidadDisponible`, `pro_id`, `st_codigo`) VALUES (\'20\', \'20\', \'1\', \'1231231\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `stock` (`st_CantidadAdquirida`, `st_CantidadDisponible`, `pro_id`, `st_codigo`) VALUES (\'20\', \'20\', \'1\', \'1231231\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `stock` (`st_CantidadAdquirida`, `st_CantidadDisponible`, `pro_id`, `st_codigo`) VALUES (\'20\', \'20\', \'1\', \'1231231\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `stock` (`st_CantidadAdquirida`, `st_CantidadDisponible`, `pro_id`, `st_codigo`) VALUES (:st_CantidadAdquirida:, :st_CantidadDisponible:, :pro_id:, :st_codigo:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Stock.php(124): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Stock->create()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Stock))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-30 18:19:06 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`restful`.`pagos`, CONSTRAINT `pagos_ibfk_2` FOREIGN KEY (`st_id`) REFERENCES `stock` (`st_id`) ON UPDATE CASCADE) in C:\xampp\htdocs\breadandfred\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\breadandfred\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `pa...', 0)
+#1 C:\xampp\htdocs\breadandfred\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pa...')
+#2 C:\xampp\htdocs\breadandfred\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pa...')
+#3 C:\xampp\htdocs\breadandfred\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pa...', Array, false)
+#4 C:\xampp\htdocs\breadandfred\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\breadandfred\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\breadandfred\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\breadandfred\app\Controllers\Pagos.php(124): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\breadandfred\system\CodeIgniter.php(934): App\Controllers\Pagos->create()
+#9 C:\xampp\htdocs\breadandfred\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+#10 C:\xampp\htdocs\breadandfred\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\breadandfred\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-05-30 18:19:06 --> Cannot add or update a child row: a foreign key constraint fails (`restful`.`pagos`, CONSTRAINT `pagos_ibfk_2` FOREIGN KEY (`st_id`) REFERENCES `stock` (`st_id`) ON UPDATE CASCADE)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `pagos` (`st_id`, `pag_PrecioCompra`, `pv_id`, `pag_FechaCompra`) VALUES (\'1\', \'43\', \'1\', \'2000-10-02\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pagos` (`st_id`, `pag_PrecioCompra`, `pv_id`, `pag_FechaCompra`) VALUES (\'1\', \'43\', \'1\', \'2000-10-02\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pagos` (`st_id`, `pag_PrecioCompra`, `pv_id`, `pag_FechaCompra`) VALUES (\'1\', \'43\', \'1\', \'2000-10-02\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pagos` (`st_id`, `pag_PrecioCompra`, `pv_id`, `pag_FechaCompra`) VALUES (:st_id:, :pag_PrecioCompra:, :pv_id:, :pag_FechaCompra:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Pagos.php(124): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pagos->create()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-30 19:13:16 --> Class 'App\Models\PedidosModel' not found
+in APPPATH\Controllers\Pedidos.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pedidos->index()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pedidos))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-30 19:13:36 --> Class 'App\Models\PedidosModel' not found
+in APPPATH\Controllers\Pedidos.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pedidos->index()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pedidos))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-30 19:14:11 --> mysqli_sql_exception: Table 'restful.cliente' doesn't exist in C:\xampp\htdocs\breadandfred\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\breadandfred\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\breadandfred\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\breadandfred\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\breadandfred\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\breadandfred\app\Models\PedidosModel.php(20): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\breadandfred\app\Controllers\Pedidos.php(18): App\Models\PedidosModel->getPedidos()
+#6 C:\xampp\htdocs\breadandfred\system\CodeIgniter.php(934): App\Controllers\Pedidos->index()
+#7 C:\xampp\htdocs\breadandfred\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pedidos))
+#8 C:\xampp\htdocs\breadandfred\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\breadandfred\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-05-30 19:14:11 --> Table 'restful.cliente' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `pedidos` `pe`
+JOIN `cliente` `cl` ON `cl`.`id` = `pe`.`cl_id`
+JOIN `producto` `pro` ON `pro`.`pro_id` = `pe`.`pro_id`
+WHERE `pe`.`pe_estado` = 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `pedidos` `pe`
+JOIN `cliente` `cl` ON `cl`.`id` = `pe`.`cl_id`
+JOIN `producto` `pro` ON `pro`.`pro_id` = `pe`.`pro_id`
+WHERE `pe`.`pe_estado` = 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `pedidos` `pe`
+JOIN `cliente` `cl` ON `cl`.`id` = `pe`.`cl_id`
+JOIN `producto` `pro` ON `pro`.`pro_id` = `pe`.`pro_id`
+WHERE `pe`.`pe_estado` = 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `pedidos` `pe`
+JOIN `cliente` `cl` ON `cl`.`id` = `pe`.`cl_id`
+JOIN `producto` `pro` ON `pro`.`pro_id` = `pe`.`pro_id`
+WHERE `pe`.`pe_estado` = :pe.pe_estado:', [...], false)
+ 5 APPPATH\Models\PedidosModel.php(20): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Pedidos.php(18): App\Models\PedidosModel->getPedidos()
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pedidos->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pedidos))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-30 19:14:41 --> mysqli_sql_exception: Table 'restful.producto' doesn't exist in C:\xampp\htdocs\breadandfred\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\breadandfred\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\breadandfred\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\breadandfred\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\breadandfred\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\breadandfred\app\Models\PedidosModel.php(20): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\breadandfred\app\Controllers\Pedidos.php(18): App\Models\PedidosModel->getPedidos()
+#6 C:\xampp\htdocs\breadandfred\system\CodeIgniter.php(934): App\Controllers\Pedidos->index()
+#7 C:\xampp\htdocs\breadandfred\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pedidos))
+#8 C:\xampp\htdocs\breadandfred\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\breadandfred\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-05-30 19:14:41 --> Table 'restful.producto' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `pedidos` `pe`
+JOIN `clientes` `cl` ON `cl`.`id` = `pe`.`cl_id`
+JOIN `producto` `pro` ON `pro`.`pro_id` = `pe`.`pro_id`
+WHERE `pe`.`pe_estado` = 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `pedidos` `pe`
+JOIN `clientes` `cl` ON `cl`.`id` = `pe`.`cl_id`
+JOIN `producto` `pro` ON `pro`.`pro_id` = `pe`.`pro_id`
+WHERE `pe`.`pe_estado` = 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `pedidos` `pe`
+JOIN `clientes` `cl` ON `cl`.`id` = `pe`.`cl_id`
+JOIN `producto` `pro` ON `pro`.`pro_id` = `pe`.`pro_id`
+WHERE `pe`.`pe_estado` = 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `pedidos` `pe`
+JOIN `clientes` `cl` ON `cl`.`id` = `pe`.`cl_id`
+JOIN `producto` `pro` ON `pro`.`pro_id` = `pe`.`pro_id`
+WHERE `pe`.`pe_estado` = :pe.pe_estado:', [...], false)
+ 5 APPPATH\Models\PedidosModel.php(20): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Pedidos.php(18): App\Models\PedidosModel->getPedidos()
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pedidos->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pedidos))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-30 20:13:07 --> Undefined index: pe_ordenPedido
+in APPPATH\Controllers\Pedidos.php on line 122.
+ 1 APPPATH\Controllers\Pedidos.php(122): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: pe_ordenPedido', 'C:\\xampp\\htdocs\\breadandfred\\app\\Controllers\\Pedidos.php', 122, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pedidos->create()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pedidos))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-30 20:14:28 --> Undefined index: pe_ordenPedido
+in APPPATH\Controllers\Pedidos.php on line 122.
+ 1 APPPATH\Controllers\Pedidos.php(122): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: pe_ordenPedido', 'C:\\xampp\\htdocs\\breadandfred\\app\\Controllers\\Pedidos.php', 122, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pedidos->create()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pedidos))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-30 20:14:42 --> Undefined index: pe_ordenPedido
+in APPPATH\Controllers\Pedidos.php on line 122.
+ 1 APPPATH\Controllers\Pedidos.php(122): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: pe_ordenPedido', 'C:\\xampp\\htdocs\\breadandfred\\app\\Controllers\\Pedidos.php', 122, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pedidos->create()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pedidos))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-30 20:14:45 --> Undefined index: pe_ordenPedido
+in APPPATH\Controllers\Pedidos.php on line 122.
+ 1 APPPATH\Controllers\Pedidos.php(122): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: pe_ordenPedido', 'C:\\xampp\\htdocs\\breadandfred\\app\\Controllers\\Pedidos.php', 122, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pedidos->create()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pedidos))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-30 20:25:18 --> mysqli_sql_exception: Unknown column 'estado' in 'where clause' in C:\xampp\htdocs\breadandfred\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\breadandfred\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\breadandfred\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\breadandfred\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\breadandfred\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\breadandfred\system\Model.php(200): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\breadandfred\system\BaseModel.php(557): CodeIgniter\Model->doFind(true, '2')
+#6 C:\xampp\htdocs\breadandfred\app\Controllers\Pagos.php(243): CodeIgniter\BaseModel->find('2')
+#7 C:\xampp\htdocs\breadandfred\system\CodeIgniter.php(934): App\Controllers\Pagos->delete('2')
+#8 C:\xampp\htdocs\breadandfred\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+#9 C:\xampp\htdocs\breadandfred\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\breadandfred\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-05-30 20:25:18 --> Unknown column 'estado' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `pagos`
+WHERE `estado` = 1
+AND `pagos`.`pag_id` = \'2\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `pagos`
+WHERE `estado` = 1
+AND `pagos`.`pag_id` = \'2\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `pagos`
+WHERE `estado` = 1
+AND `pagos`.`pag_id` = \'2\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `pagos`
+WHERE `estado` = :estado:
+AND `pagos`.`pag_id` = :pagos.pag_id:', [...], false)
+ 5 SYSTEMPATH\Model.php(200): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(557): CodeIgniter\Model->doFind(true, '2')
+ 7 APPPATH\Controllers\Pagos.php(243): CodeIgniter\BaseModel->find('2')
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pagos->delete('2')
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-30 20:25:50 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 924.
+ 1 SYSTEMPATH\BaseModel.php(924): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], [])
+ 3 APPPATH\Controllers\Pagos.php(246): CodeIgniter\Model->update('2', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pagos->delete('2')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-30 20:30:42 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 924.
+ 1 SYSTEMPATH\BaseModel.php(924): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], [])
+ 3 APPPATH\Controllers\Pedidos.php(259): CodeIgniter\Model->update('1', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pedidos->delete('1')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pedidos))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-30 20:31:53 --> mysqli_sql_exception: Table 'restful.producto' doesn't exist in C:\xampp\htdocs\breadandfred\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\breadandfred\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\breadandfred\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\breadandfred\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\breadandfred\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\breadandfred\app\Models\PedidosModel.php(28): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\breadandfred\app\Controllers\Pedidos.php(60): App\Models\PedidosModel->getId('1')
+#6 C:\xampp\htdocs\breadandfred\system\CodeIgniter.php(934): App\Controllers\Pedidos->show('1')
+#7 C:\xampp\htdocs\breadandfred\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pedidos))
+#8 C:\xampp\htdocs\breadandfred\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\breadandfred\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-05-30 20:31:53 --> Table 'restful.producto' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `pedidos` `pe`
+JOIN `clientes` `cl` ON `cl`.`id` = `pe`.`cl_id`
+JOIN `producto` `pro` ON `pro`.`pro_id` = `pe`.`pro_id`
+WHERE `pe`.`pe_id` = \'1\'
+AND `pe`.`pe_estado` = 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `pedidos` `pe`
+JOIN `clientes` `cl` ON `cl`.`id` = `pe`.`cl_id`
+JOIN `producto` `pro` ON `pro`.`pro_id` = `pe`.`pro_id`
+WHERE `pe`.`pe_id` = \'1\'
+AND `pe`.`pe_estado` = 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `pedidos` `pe`
+JOIN `clientes` `cl` ON `cl`.`id` = `pe`.`cl_id`
+JOIN `producto` `pro` ON `pro`.`pro_id` = `pe`.`pro_id`
+WHERE `pe`.`pe_id` = \'1\'
+AND `pe`.`pe_estado` = 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `pedidos` `pe`
+JOIN `clientes` `cl` ON `cl`.`id` = `pe`.`cl_id`
+JOIN `producto` `pro` ON `pro`.`pro_id` = `pe`.`pro_id`
+WHERE `pe`.`pe_id` = :pe.pe_id:
+AND `pe`.`pe_estado` = :pe.pe_estado:', [...], false)
+ 5 APPPATH\Models\PedidosModel.php(28): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Pedidos.php(60): App\Models\PedidosModel->getId('1')
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pedidos->show('1')
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pedidos))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-30 20:34:41 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 924.
+ 1 SYSTEMPATH\BaseModel.php(924): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], [])
+ 3 APPPATH\Controllers\Pagos.php(246): CodeIgniter\Model->update('2', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pagos->delete('2')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-30 20:51:24 --> Undefined index: cl_id
+in APPPATH\Controllers\Proveedores.php on line 58.
+ 1 APPPATH\Controllers\Proveedores.php(58): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: cl_id', 'C:\\xampp\\htdocs\\breadandfred\\app\\Controllers\\Proveedores.php', 58, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Proveedores->show('2')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Proveedores))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-30 20:52:18 --> Undefined index: cl_id
+in APPPATH\Controllers\Proveedores.php on line 58.
+ 1 APPPATH\Controllers\Proveedores.php(58): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: cl_id', 'C:\\xampp\\htdocs\\breadandfred\\app\\Controllers\\Proveedores.php', 58, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Proveedores->show('2')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Proveedores))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-30 20:52:25 --> Undefined index: cl_id
+in APPPATH\Controllers\Proveedores.php on line 58.
+ 1 APPPATH\Controllers\Proveedores.php(58): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: cl_id', 'C:\\xampp\\htdocs\\breadandfred\\app\\Controllers\\Proveedores.php', 58, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Proveedores->show('2')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Proveedores))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-30 21:03:15 --> mysqli_sql_exception: Table 'restful.producto' doesn't exist in C:\xampp\htdocs\breadandfred\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\breadandfred\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\breadandfred\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\breadandfred\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\breadandfred\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\breadandfred\app\Models\PedidosModel.php(28): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\breadandfred\app\Controllers\Pedidos.php(60): App\Models\PedidosModel->getId('4')
+#6 C:\xampp\htdocs\breadandfred\system\CodeIgniter.php(934): App\Controllers\Pedidos->show('4')
+#7 C:\xampp\htdocs\breadandfred\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pedidos))
+#8 C:\xampp\htdocs\breadandfred\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\breadandfred\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-05-30 21:03:15 --> Table 'restful.producto' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `pedidos` `pe`
+JOIN `clientes` `cl` ON `cl`.`id` = `pe`.`cl_id`
+JOIN `producto` `pro` ON `pro`.`pro_id` = `pe`.`pro_id`
+WHERE `pe`.`pe_id` = \'4\'
+AND `pe`.`pe_estado` = 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `pedidos` `pe`
+JOIN `clientes` `cl` ON `cl`.`id` = `pe`.`cl_id`
+JOIN `producto` `pro` ON `pro`.`pro_id` = `pe`.`pro_id`
+WHERE `pe`.`pe_id` = \'4\'
+AND `pe`.`pe_estado` = 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `pedidos` `pe`
+JOIN `clientes` `cl` ON `cl`.`id` = `pe`.`cl_id`
+JOIN `producto` `pro` ON `pro`.`pro_id` = `pe`.`pro_id`
+WHERE `pe`.`pe_id` = \'4\'
+AND `pe`.`pe_estado` = 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `pedidos` `pe`
+JOIN `clientes` `cl` ON `cl`.`id` = `pe`.`cl_id`
+JOIN `producto` `pro` ON `pro`.`pro_id` = `pe`.`pro_id`
+WHERE `pe`.`pe_id` = :pe.pe_id:
+AND `pe`.`pe_estado` = :pe.pe_estado:', [...], false)
+ 5 APPPATH\Models\PedidosModel.php(28): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Pedidos.php(60): App\Models\PedidosModel->getId('4')
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pedidos->show('4')
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pedidos))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-30 21:03:39 --> mysqli_sql_exception: Table 'restful.producto' doesn't exist in C:\xampp\htdocs\breadandfred\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\breadandfred\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\breadandfred\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\breadandfred\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\breadandfred\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\breadandfred\app\Models\PedidosModel.php(28): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\breadandfred\app\Controllers\Pedidos.php(60): App\Models\PedidosModel->getId('4')
+#6 C:\xampp\htdocs\breadandfred\system\CodeIgniter.php(934): App\Controllers\Pedidos->show('4')
+#7 C:\xampp\htdocs\breadandfred\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pedidos))
+#8 C:\xampp\htdocs\breadandfred\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\breadandfred\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-05-30 21:03:39 --> Table 'restful.producto' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `pedidos` `pe`
+JOIN `clientes` `cl` ON `cl`.`id` = `pe`.`cl_id`
+JOIN `producto` `pro` ON `pro`.`pro_id` = `pe`.`pro_id`
+WHERE `pe`.`pe_id` = \'4\'
+AND `pe`.`pe_estado` = 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `pedidos` `pe`
+JOIN `clientes` `cl` ON `cl`.`id` = `pe`.`cl_id`
+JOIN `producto` `pro` ON `pro`.`pro_id` = `pe`.`pro_id`
+WHERE `pe`.`pe_id` = \'4\'
+AND `pe`.`pe_estado` = 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `pedidos` `pe`
+JOIN `clientes` `cl` ON `cl`.`id` = `pe`.`cl_id`
+JOIN `producto` `pro` ON `pro`.`pro_id` = `pe`.`pro_id`
+WHERE `pe`.`pe_id` = \'4\'
+AND `pe`.`pe_estado` = 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `pedidos` `pe`
+JOIN `clientes` `cl` ON `cl`.`id` = `pe`.`cl_id`
+JOIN `producto` `pro` ON `pro`.`pro_id` = `pe`.`pro_id`
+WHERE `pe`.`pe_id` = :pe.pe_id:
+AND `pe`.`pe_estado` = :pe.pe_estado:', [...], false)
+ 5 APPPATH\Models\PedidosModel.php(28): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Pedidos.php(60): App\Models\PedidosModel->getId('4')
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Pedidos->show('4')
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pedidos))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-30 21:17:46 --> mysqli_sql_exception: Unknown column 'estado' in 'where clause' in C:\xampp\htdocs\breadandfred\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\breadandfred\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\breadandfred\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\breadandfred\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\breadandfred\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\breadandfred\system\Model.php(200): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\breadandfred\system\BaseModel.php(557): CodeIgniter\Model->doFind(true, '7')
+#6 C:\xampp\htdocs\breadandfred\app\Controllers\Stock.php(243): CodeIgniter\BaseModel->find('7')
+#7 C:\xampp\htdocs\breadandfred\system\CodeIgniter.php(934): App\Controllers\Stock->delete('7')
+#8 C:\xampp\htdocs\breadandfred\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Stock))
+#9 C:\xampp\htdocs\breadandfred\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\breadandfred\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-05-30 21:17:46 --> Unknown column 'estado' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `stock`
+WHERE `estado` = 1
+AND `stock`.`st_id` = \'7\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `stock`
+WHERE `estado` = 1
+AND `stock`.`st_id` = \'7\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `stock`
+WHERE `estado` = 1
+AND `stock`.`st_id` = \'7\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `stock`
+WHERE `estado` = :estado:
+AND `stock`.`st_id` = :stock.st_id:', [...], false)
+ 5 SYSTEMPATH\Model.php(200): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(557): CodeIgniter\Model->doFind(true, '7')
+ 7 APPPATH\Controllers\Stock.php(243): CodeIgniter\BaseModel->find('7')
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Stock->delete('7')
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Stock))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-30 21:29:52 --> mysqli_sql_exception: Unknown column 'estado' in 'where clause' in C:\xampp\htdocs\breadandfred\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\breadandfred\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\breadandfred\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\breadandfred\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\breadandfred\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\breadandfred\system\Model.php(200): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\breadandfred\system\BaseModel.php(557): CodeIgniter\Model->doFind(true, '6')
+#6 C:\xampp\htdocs\breadandfred\app\Controllers\Productos.php(248): CodeIgniter\BaseModel->find('6')
+#7 C:\xampp\htdocs\breadandfred\system\CodeIgniter.php(934): App\Controllers\Productos->delete('6')
+#8 C:\xampp\htdocs\breadandfred\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+#9 C:\xampp\htdocs\breadandfred\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\breadandfred\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-05-30 21:29:52 --> Unknown column 'estado' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `productos`
+WHERE `estado` = 1
+AND `productos`.`pro_id` = \'6\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `productos`
+WHERE `estado` = 1
+AND `productos`.`pro_id` = \'6\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `productos`
+WHERE `estado` = 1
+AND `productos`.`pro_id` = \'6\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `productos`
+WHERE `estado` = :estado:
+AND `productos`.`pro_id` = :productos.pro_id:', [...], false)
+ 5 SYSTEMPATH\Model.php(200): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(557): CodeIgniter\Model->doFind(true, '6')
+ 7 APPPATH\Controllers\Productos.php(248): CodeIgniter\BaseModel->find('6')
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Productos->delete('6')
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-30 21:31:44 --> mysqli_sql_exception: Unknown column 'tp.tv_id' in 'on clause' in C:\xampp\htdocs\breadandfred\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\breadandfred\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\breadandfred\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\breadandfred\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\breadandfred\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\breadandfred\app\Models\VentasModel.php(28): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\breadandfred\app\Controllers\Ventas.php(60): App\Models\VentasModel->getId('2')
+#6 C:\xampp\htdocs\breadandfred\system\CodeIgniter.php(934): App\Controllers\Ventas->show('2')
+#7 C:\xampp\htdocs\breadandfred\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+#8 C:\xampp\htdocs\breadandfred\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\breadandfred\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-05-30 21:31:44 --> Unknown column 'tp.tv_id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `ventas` `v`
+JOIN `tipo_venta` `tv` ON `tv`.`tv_id` = `tp`.`tv_id`
+JOIN `clientes` `c` ON `v`.`cl_id` = `c`.`id`
+WHERE `v`.`ve_id` = \'2\'
+AND `v`.`ve_estado` = 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `ventas` `v`
+JOIN `tipo_venta` `tv` ON `tv`.`tv_id` = `tp`.`tv_id`
+JOIN `clientes` `c` ON `v`.`cl_id` = `c`.`id`
+WHERE `v`.`ve_id` = \'2\'
+AND `v`.`ve_estado` = 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `ventas` `v`
+JOIN `tipo_venta` `tv` ON `tv`.`tv_id` = `tp`.`tv_id`
+JOIN `clientes` `c` ON `v`.`cl_id` = `c`.`id`
+WHERE `v`.`ve_id` = \'2\'
+AND `v`.`ve_estado` = 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `ventas` `v`
+JOIN `tipo_venta` `tv` ON `tv`.`tv_id` = `tp`.`tv_id`
+JOIN `clientes` `c` ON `v`.`cl_id` = `c`.`id`
+WHERE `v`.`ve_id` = :v.ve_id:
+AND `v`.`ve_estado` = :v.ve_estado:', [...], false)
+ 5 APPPATH\Models\VentasModel.php(28): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Ventas.php(60): App\Models\VentasModel->getId('2')
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->show('2')
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-30 21:34:29 --> mysqli_sql_exception: Unknown column 'estado' in 'where clause' in C:\xampp\htdocs\breadandfred\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\breadandfred\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\breadandfred\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\breadandfred\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\breadandfred\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\breadandfred\system\Model.php(200): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\breadandfred\system\BaseModel.php(557): CodeIgniter\Model->doFind(true, '2')
+#6 C:\xampp\htdocs\breadandfred\app\Controllers\Ventas.php(243): CodeIgniter\BaseModel->find('2')
+#7 C:\xampp\htdocs\breadandfred\system\CodeIgniter.php(934): App\Controllers\Ventas->delete('2')
+#8 C:\xampp\htdocs\breadandfred\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+#9 C:\xampp\htdocs\breadandfred\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\breadandfred\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-05-30 21:34:29 --> Unknown column 'estado' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `ventas`
+WHERE `estado` = 1
+AND `ventas`.`ve_id` = \'2\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `ventas`
+WHERE `estado` = 1
+AND `ventas`.`ve_id` = \'2\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `ventas`
+WHERE `estado` = 1
+AND `ventas`.`ve_id` = \'2\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `ventas`
+WHERE `estado` = :estado:
+AND `ventas`.`ve_id` = :ventas.ve_id:', [...], false)
+ 5 SYSTEMPATH\Model.php(200): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(557): CodeIgniter\Model->doFind(true, '2')
+ 7 APPPATH\Controllers\Ventas.php(243): CodeIgniter\BaseModel->find('2')
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Ventas->delete('2')
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ventas))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-30 21:35:55 --> mysqli_sql_exception: Unknown column 'pev.pe_ordenPedido' in 'on clause' in C:\xampp\htdocs\breadandfred\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\breadandfred\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\breadandfred\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\breadandfred\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\breadandfred\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\breadandfred\app\Models\PedidosVentasModel.php(20): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\breadandfred\app\Controllers\PedidosVentas.php(18): App\Models\PedidosVentasModel->getPedidosVentas()
+#6 C:\xampp\htdocs\breadandfred\system\CodeIgniter.php(934): App\Controllers\PedidosVentas->index()
+#7 C:\xampp\htdocs\breadandfred\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PedidosVentas))
+#8 C:\xampp\htdocs\breadandfred\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\breadandfred\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-05-30 21:35:55 --> Unknown column 'pev.pe_ordenPedido' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `pedidos_ventas` `pev`
+JOIN `ventas` `v` ON `pev`.`ve_id` = `v`.`ve_id`
+JOIN `pedidos` `pe` ON `pev`.`pe_ordenPedido` = `pe`.`pe_ordenPedido`
+WHERE `pev`.`pev_estado` = 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `pedidos_ventas` `pev`
+JOIN `ventas` `v` ON `pev`.`ve_id` = `v`.`ve_id`
+JOIN `pedidos` `pe` ON `pev`.`pe_ordenPedido` = `pe`.`pe_ordenPedido`
+WHERE `pev`.`pev_estado` = 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `pedidos_ventas` `pev`
+JOIN `ventas` `v` ON `pev`.`ve_id` = `v`.`ve_id`
+JOIN `pedidos` `pe` ON `pev`.`pe_ordenPedido` = `pe`.`pe_ordenPedido`
+WHERE `pev`.`pev_estado` = 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `pedidos_ventas` `pev`
+JOIN `ventas` `v` ON `pev`.`ve_id` = `v`.`ve_id`
+JOIN `pedidos` `pe` ON `pev`.`pe_ordenPedido` = `pe`.`pe_ordenPedido`
+WHERE `pev`.`pev_estado` = :pev.pev_estado:', [...], false)
+ 5 APPPATH\Models\PedidosVentasModel.php(20): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\PedidosVentas.php(18): App\Models\PedidosVentasModel->getPedidosVentas()
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PedidosVentas->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PedidosVentas))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-30 22:12:39 --> mysqli_sql_exception: Unknown column 'pe.pe_pe_id' in 'on clause' in C:\xampp\htdocs\breadandfred\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\breadandfred\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\breadandfred\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\breadandfred\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\breadandfred\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\breadandfred\app\Models\PedidosVentasModel.php(20): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\breadandfred\app\Controllers\PedidosVentas.php(18): App\Models\PedidosVentasModel->getPedidosVentas()
+#6 C:\xampp\htdocs\breadandfred\system\CodeIgniter.php(934): App\Controllers\PedidosVentas->index()
+#7 C:\xampp\htdocs\breadandfred\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PedidosVentas))
+#8 C:\xampp\htdocs\breadandfred\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\breadandfred\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-05-30 22:12:39 --> Unknown column 'pe.pe_pe_id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `pedidos_ventas` `pev`
+JOIN `ventas` `v` ON `pev`.`ve_id` = `v`.`ve_id`
+JOIN `pedidos` `pe` ON `pev`.`pe_id` = `pe`.`pe_pe_id`
+WHERE `pev`.`pev_estado` = 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `pedidos_ventas` `pev`
+JOIN `ventas` `v` ON `pev`.`ve_id` = `v`.`ve_id`
+JOIN `pedidos` `pe` ON `pev`.`pe_id` = `pe`.`pe_pe_id`
+WHERE `pev`.`pev_estado` = 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `pedidos_ventas` `pev`
+JOIN `ventas` `v` ON `pev`.`ve_id` = `v`.`ve_id`
+JOIN `pedidos` `pe` ON `pev`.`pe_id` = `pe`.`pe_pe_id`
+WHERE `pev`.`pev_estado` = 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `pedidos_ventas` `pev`
+JOIN `ventas` `v` ON `pev`.`ve_id` = `v`.`ve_id`
+JOIN `pedidos` `pe` ON `pev`.`pe_id` = `pe`.`pe_pe_id`
+WHERE `pev`.`pev_estado` = :pev.pev_estado:', [...], false)
+ 5 APPPATH\Models\PedidosVentasModel.php(20): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\PedidosVentas.php(18): App\Models\PedidosVentasModel->getPedidosVentas()
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PedidosVentas->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PedidosVentas))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-30 22:17:19 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`restful`.`pedidos_ventas`, CONSTRAINT `pedidos_ventas_ibfk_3` FOREIGN KEY (`tp_id`) REFERENCES `tipo_pago` (`tp_id`) ON UPDATE CASCADE) in C:\xampp\htdocs\breadandfred\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\breadandfred\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `pe...', 0)
+#1 C:\xampp\htdocs\breadandfred\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pe...')
+#2 C:\xampp\htdocs\breadandfred\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pe...')
+#3 C:\xampp\htdocs\breadandfred\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pe...', Array, false)
+#4 C:\xampp\htdocs\breadandfred\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\breadandfred\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\breadandfred\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\breadandfred\app\Controllers\PedidosVentas.php(128): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\breadandfred\system\CodeIgniter.php(934): App\Controllers\PedidosVentas->create()
+#9 C:\xampp\htdocs\breadandfred\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PedidosVentas))
+#10 C:\xampp\htdocs\breadandfred\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\breadandfred\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-05-30 22:17:19 --> Cannot add or update a child row: a foreign key constraint fails (`restful`.`pedidos_ventas`, CONSTRAINT `pedidos_ventas_ibfk_3` FOREIGN KEY (`tp_id`) REFERENCES `tipo_pago` (`tp_id`) ON UPDATE CASCADE)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `pedidos_ventas` (`ve_id`, `pe_id`, `pev_precioUnitario`, `pev_subtotal`) VALUES (\'2\', \'1\', \'12\', \'12\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pedidos_ventas` (`ve_id`, `pe_id`, `pev_precioUnitario`, `pev_subtotal`) VALUES (\'2\', \'1\', \'12\', \'12\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pedidos_ventas` (`ve_id`, `pe_id`, `pev_precioUnitario`, `pev_subtotal`) VALUES (\'2\', \'1\', \'12\', \'12\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pedidos_ventas` (`ve_id`, `pe_id`, `pev_precioUnitario`, `pev_subtotal`) VALUES (:ve_id:, :pe_id:, :pev_precioUnitario:, :pev_subtotal:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\PedidosVentas.php(128): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PedidosVentas->create()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PedidosVentas))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-30 22:19:28 --> Undefined index: tp_id
+in APPPATH\Controllers\PedidosVentas.php on line 124.
+ 1 APPPATH\Controllers\PedidosVentas.php(124): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: tp_id', 'C:\\xampp\\htdocs\\breadandfred\\app\\Controllers\\PedidosVentas.php', 124, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PedidosVentas->create()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PedidosVentas))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-30 22:20:19 --> Undefined index: tp_id
+in APPPATH\Controllers\PedidosVentas.php on line 124.
+ 1 APPPATH\Controllers\PedidosVentas.php(124): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: tp_id', 'C:\\xampp\\htdocs\\breadandfred\\app\\Controllers\\PedidosVentas.php', 124, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PedidosVentas->create()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PedidosVentas))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-30 22:23:22 --> mysqli_sql_exception: Unknown column 'estado' in 'where clause' in C:\xampp\htdocs\breadandfred\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\breadandfred\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\breadandfred\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\breadandfred\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\breadandfred\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\breadandfred\system\Model.php(200): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\breadandfred\system\BaseModel.php(557): CodeIgniter\Model->doFind(true, '2')
+#6 C:\xampp\htdocs\breadandfred\app\Controllers\PedidosVentas.php(252): CodeIgniter\BaseModel->find('2')
+#7 C:\xampp\htdocs\breadandfred\system\CodeIgniter.php(934): App\Controllers\PedidosVentas->delete('2')
+#8 C:\xampp\htdocs\breadandfred\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PedidosVentas))
+#9 C:\xampp\htdocs\breadandfred\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\breadandfred\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-05-30 22:23:22 --> Unknown column 'estado' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `pedidos_ventas`
+WHERE `estado` = 1
+AND `pedidos_ventas`.`pev_id` = \'2\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `pedidos_ventas`
+WHERE `estado` = 1
+AND `pedidos_ventas`.`pev_id` = \'2\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `pedidos_ventas`
+WHERE `estado` = 1
+AND `pedidos_ventas`.`pev_id` = \'2\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `pedidos_ventas`
+WHERE `estado` = :estado:
+AND `pedidos_ventas`.`pev_id` = :pedidos_ventas.pev_id:', [...], false)
+ 5 SYSTEMPATH\Model.php(200): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(557): CodeIgniter\Model->doFind(true, '2')
+ 7 APPPATH\Controllers\PedidosVentas.php(252): CodeIgniter\BaseModel->find('2')
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PedidosVentas->delete('2')
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PedidosVentas))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-30 22:30:42 --> mysqli_sql_exception: Table 'restful.producto' doesn't exist in C:\xampp\htdocs\breadandfred\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\breadandfred\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\breadandfred\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\breadandfred\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\breadandfred\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\breadandfred\app\Models\DetalleVentasModel.php(21): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\breadandfred\app\Controllers\DetalleVentas.php(18): App\Models\DetalleVentasModel->getDetalleVentas()
+#6 C:\xampp\htdocs\breadandfred\system\CodeIgniter.php(934): App\Controllers\DetalleVentas->index()
+#7 C:\xampp\htdocs\breadandfred\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetalleVentas))
+#8 C:\xampp\htdocs\breadandfred\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\breadandfred\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-05-30 22:30:42 --> Table 'restful.producto' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `detalle_ventas` `dv`
+JOIN `ventas` `v` ON `dv`.`ve_id` = `v`.`ve_id`
+JOIN `producto` `pro` ON `dv`.`pro_id` = `pro`.`pro_id`
+JOIN `tipo_venta` `tv` ON `v`.`tv_id` = `tv`.`tv_id`
+WHERE `dv`.`dv_estado` = 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `detalle_ventas` `dv`
+JOIN `ventas` `v` ON `dv`.`ve_id` = `v`.`ve_id`
+JOIN `producto` `pro` ON `dv`.`pro_id` = `pro`.`pro_id`
+JOIN `tipo_venta` `tv` ON `v`.`tv_id` = `tv`.`tv_id`
+WHERE `dv`.`dv_estado` = 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `detalle_ventas` `dv`
+JOIN `ventas` `v` ON `dv`.`ve_id` = `v`.`ve_id`
+JOIN `producto` `pro` ON `dv`.`pro_id` = `pro`.`pro_id`
+JOIN `tipo_venta` `tv` ON `v`.`tv_id` = `tv`.`tv_id`
+WHERE `dv`.`dv_estado` = 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `detalle_ventas` `dv`
+JOIN `ventas` `v` ON `dv`.`ve_id` = `v`.`ve_id`
+JOIN `producto` `pro` ON `dv`.`pro_id` = `pro`.`pro_id`
+JOIN `tipo_venta` `tv` ON `v`.`tv_id` = `tv`.`tv_id`
+WHERE `dv`.`dv_estado` = :dv.dv_estado:', [...], false)
+ 5 APPPATH\Models\DetalleVentasModel.php(21): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\DetalleVentas.php(18): App\Models\DetalleVentasModel->getDetalleVentas()
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DetalleVentas->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetalleVentas))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-30 22:31:57 --> mysqli_sql_exception: Table 'restful.producto' doesn't exist in C:\xampp\htdocs\breadandfred\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\breadandfred\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\breadandfred\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\breadandfred\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\breadandfred\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\breadandfred\app\Models\DetalleVentasModel.php(21): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\breadandfred\app\Controllers\DetalleVentas.php(18): App\Models\DetalleVentasModel->getDetalleVentas()
+#6 C:\xampp\htdocs\breadandfred\system\CodeIgniter.php(934): App\Controllers\DetalleVentas->index()
+#7 C:\xampp\htdocs\breadandfred\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetalleVentas))
+#8 C:\xampp\htdocs\breadandfred\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\breadandfred\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-05-30 22:31:57 --> Table 'restful.producto' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `detalle_ventas` `dv`
+JOIN `ventas` `v` ON `dv`.`ve_id` = `v`.`ve_id`
+JOIN `producto` `pro` ON `dv`.`pro_id` = `pro`.`pro_id`
+JOIN `tipo_pago` `tp` ON `v`.`tp_id` = `tp`.`tp_id`
+WHERE `dv`.`dv_estado` = 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `detalle_ventas` `dv`
+JOIN `ventas` `v` ON `dv`.`ve_id` = `v`.`ve_id`
+JOIN `producto` `pro` ON `dv`.`pro_id` = `pro`.`pro_id`
+JOIN `tipo_pago` `tp` ON `v`.`tp_id` = `tp`.`tp_id`
+WHERE `dv`.`dv_estado` = 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `detalle_ventas` `dv`
+JOIN `ventas` `v` ON `dv`.`ve_id` = `v`.`ve_id`
+JOIN `producto` `pro` ON `dv`.`pro_id` = `pro`.`pro_id`
+JOIN `tipo_pago` `tp` ON `v`.`tp_id` = `tp`.`tp_id`
+WHERE `dv`.`dv_estado` = 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `detalle_ventas` `dv`
+JOIN `ventas` `v` ON `dv`.`ve_id` = `v`.`ve_id`
+JOIN `producto` `pro` ON `dv`.`pro_id` = `pro`.`pro_id`
+JOIN `tipo_pago` `tp` ON `v`.`tp_id` = `tp`.`tp_id`
+WHERE `dv`.`dv_estado` = :dv.dv_estado:', [...], false)
+ 5 APPPATH\Models\DetalleVentasModel.php(21): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\DetalleVentas.php(18): App\Models\DetalleVentasModel->getDetalleVentas()
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DetalleVentas->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetalleVentas))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-30 22:32:07 --> mysqli_sql_exception: Unknown column 'v.tp_id' in 'on clause' in C:\xampp\htdocs\breadandfred\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\breadandfred\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\breadandfred\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\breadandfred\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\breadandfred\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\breadandfred\app\Models\DetalleVentasModel.php(21): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\breadandfred\app\Controllers\DetalleVentas.php(18): App\Models\DetalleVentasModel->getDetalleVentas()
+#6 C:\xampp\htdocs\breadandfred\system\CodeIgniter.php(934): App\Controllers\DetalleVentas->index()
+#7 C:\xampp\htdocs\breadandfred\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetalleVentas))
+#8 C:\xampp\htdocs\breadandfred\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\breadandfred\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-05-30 22:32:07 --> Unknown column 'v.tp_id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `detalle_ventas` `dv`
+JOIN `ventas` `v` ON `dv`.`ve_id` = `v`.`ve_id`
+JOIN `productos` `pro` ON `dv`.`pro_id` = `pro`.`pro_id`
+JOIN `tipo_pago` `tp` ON `v`.`tp_id` = `tp`.`tp_id`
+WHERE `dv`.`dv_estado` = 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `detalle_ventas` `dv`
+JOIN `ventas` `v` ON `dv`.`ve_id` = `v`.`ve_id`
+JOIN `productos` `pro` ON `dv`.`pro_id` = `pro`.`pro_id`
+JOIN `tipo_pago` `tp` ON `v`.`tp_id` = `tp`.`tp_id`
+WHERE `dv`.`dv_estado` = 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `detalle_ventas` `dv`
+JOIN `ventas` `v` ON `dv`.`ve_id` = `v`.`ve_id`
+JOIN `productos` `pro` ON `dv`.`pro_id` = `pro`.`pro_id`
+JOIN `tipo_pago` `tp` ON `v`.`tp_id` = `tp`.`tp_id`
+WHERE `dv`.`dv_estado` = 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `detalle_ventas` `dv`
+JOIN `ventas` `v` ON `dv`.`ve_id` = `v`.`ve_id`
+JOIN `productos` `pro` ON `dv`.`pro_id` = `pro`.`pro_id`
+JOIN `tipo_pago` `tp` ON `v`.`tp_id` = `tp`.`tp_id`
+WHERE `dv`.`dv_estado` = :dv.dv_estado:', [...], false)
+ 5 APPPATH\Models\DetalleVentasModel.php(21): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\DetalleVentas.php(18): App\Models\DetalleVentasModel->getDetalleVentas()
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DetalleVentas->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetalleVentas))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-30 22:37:41 --> mysqli_sql_exception: Unknown column 'estado' in 'where clause' in C:\xampp\htdocs\breadandfred\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\breadandfred\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\breadandfred\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\breadandfred\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\breadandfred\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\breadandfred\system\Model.php(200): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\breadandfred\system\BaseModel.php(557): CodeIgniter\Model->doFind(true, '1')
+#6 C:\xampp\htdocs\breadandfred\app\Controllers\DetalleVentas.php(248): CodeIgniter\BaseModel->find('1')
+#7 C:\xampp\htdocs\breadandfred\system\CodeIgniter.php(934): App\Controllers\DetalleVentas->delete('1')
+#8 C:\xampp\htdocs\breadandfred\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetalleVentas))
+#9 C:\xampp\htdocs\breadandfred\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\breadandfred\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-05-30 22:37:41 --> Unknown column 'estado' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `detalle_ventas`
+WHERE `estado` = 1
+AND `detalle_ventas`.`dv_id` = \'1\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `detalle_ventas`
+WHERE `estado` = 1
+AND `detalle_ventas`.`dv_id` = \'1\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `detalle_ventas`
+WHERE `estado` = 1
+AND `detalle_ventas`.`dv_id` = \'1\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `detalle_ventas`
+WHERE `estado` = :estado:
+AND `detalle_ventas`.`dv_id` = :detalle_ventas.dv_id:', [...], false)
+ 5 SYSTEMPATH\Model.php(200): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(557): CodeIgniter\Model->doFind(true, '1')
+ 7 APPPATH\Controllers\DetalleVentas.php(248): CodeIgniter\BaseModel->find('1')
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DetalleVentas->delete('1')
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetalleVentas))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-30 22:37:55 --> mysqli_sql_exception: Unknown column 'dev_estado' in 'where clause' in C:\xampp\htdocs\breadandfred\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\breadandfred\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\breadandfred\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\breadandfred\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\breadandfred\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\breadandfred\system\Model.php(200): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\breadandfred\system\BaseModel.php(557): CodeIgniter\Model->doFind(true, '1')
+#6 C:\xampp\htdocs\breadandfred\app\Controllers\DetalleVentas.php(248): CodeIgniter\BaseModel->find('1')
+#7 C:\xampp\htdocs\breadandfred\system\CodeIgniter.php(934): App\Controllers\DetalleVentas->delete('1')
+#8 C:\xampp\htdocs\breadandfred\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetalleVentas))
+#9 C:\xampp\htdocs\breadandfred\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\breadandfred\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-05-30 22:37:55 --> Unknown column 'dev_estado' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `detalle_ventas`
+WHERE `dev_estado` = 1
+AND `detalle_ventas`.`dv_id` = \'1\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `detalle_ventas`
+WHERE `dev_estado` = 1
+AND `detalle_ventas`.`dv_id` = \'1\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `detalle_ventas`
+WHERE `dev_estado` = 1
+AND `detalle_ventas`.`dv_id` = \'1\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `detalle_ventas`
+WHERE `dev_estado` = :dev_estado:
+AND `detalle_ventas`.`dv_id` = :detalle_ventas.dv_id:', [...], false)
+ 5 SYSTEMPATH\Model.php(200): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(557): CodeIgniter\Model->doFind(true, '1')
+ 7 APPPATH\Controllers\DetalleVentas.php(248): CodeIgniter\BaseModel->find('1')
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\DetalleVentas->delete('1')
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetalleVentas))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

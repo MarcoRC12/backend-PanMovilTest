@@ -1,0 +1,328 @@
+ERROR - 2023-07-02 04:02:09 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`app_panaderia`.`stock`, CONSTRAINT `stock_ibfk_1` FOREIGN KEY (`pro_id`) REFERENCES `productos` (`pro_id`) ON UPDATE CASCADE) in /home/app/public_html/panaderia/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home/app/public_html/panaderia/system/Database/MySQLi/Connection.php(295): mysqli->query('INSERT INTO `st...', 0)
+#1 /home/app/public_html/panaderia/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `st...')
+#2 /home/app/public_html/panaderia/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `st...')
+#3 /home/app/public_html/panaderia/system/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `st...', Array, false)
+#4 /home/app/public_html/panaderia/system/Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 /home/app/public_html/panaderia/system/BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 /home/app/public_html/panaderia/system/Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 /home/app/public_html/panaderia/app/Controllers/Stock.php(127): CodeIgniter\Model->insert(Array)
+#8 /home/app/public_html/panaderia/system/CodeIgniter.php(934): App\Controllers\Stock->create()
+#9 /home/app/public_html/panaderia/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Stock))
+#10 /home/app/public_html/panaderia/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /home/app/public_html/panaderia/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-07-02 04:02:09 --> Cannot add or update a child row: a foreign key constraint fails (`app_panaderia`.`stock`, CONSTRAINT `stock_ibfk_1` FOREIGN KEY (`pro_id`) REFERENCES `productos` (`pro_id`) ON UPDATE CASCADE)
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 295.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(295): mysqli->query('INSERT INTO `stock` (`st_CantidadAdquirida`, `st_CantidadDisponible`, `pro_id`, `st_codigo`, `empresa`) VALUES (\'800\', \'12312\', \'234\', \'1\', \'22\')', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `stock` (`st_CantidadAdquirida`, `st_CantidadDisponible`, `pro_id`, `st_codigo`, `empresa`) VALUES (\'800\', \'12312\', \'234\', \'1\', \'22\')')
+ 3 SYSTEMPATH/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `stock` (`st_CantidadAdquirida`, `st_CantidadDisponible`, `pro_id`, `st_codigo`, `empresa`) VALUES (\'800\', \'12312\', \'234\', \'1\', \'22\')')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `stock` (`st_CantidadAdquirida`, `st_CantidadDisponible`, `pro_id`, `st_codigo`, `empresa`) VALUES (:st_CantidadAdquirida:, :st_CantidadDisponible:, :pro_id:, :st_codigo:, :empresa:)', [...], false)
+ 5 SYSTEMPATH/Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH/BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH/Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH/Controllers/Stock.php(127): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Stock->create()
+10 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Stock))
+11 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-02 04:02:42 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`app_panaderia`.`stock`, CONSTRAINT `stock_ibfk_1` FOREIGN KEY (`pro_id`) REFERENCES `productos` (`pro_id`) ON UPDATE CASCADE) in /home/app/public_html/panaderia/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home/app/public_html/panaderia/system/Database/MySQLi/Connection.php(295): mysqli->query('INSERT INTO `st...', 0)
+#1 /home/app/public_html/panaderia/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `st...')
+#2 /home/app/public_html/panaderia/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `st...')
+#3 /home/app/public_html/panaderia/system/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `st...', Array, false)
+#4 /home/app/public_html/panaderia/system/Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 /home/app/public_html/panaderia/system/BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 /home/app/public_html/panaderia/system/Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 /home/app/public_html/panaderia/app/Controllers/Stock.php(127): CodeIgniter\Model->insert(Array)
+#8 /home/app/public_html/panaderia/system/CodeIgniter.php(934): App\Controllers\Stock->create()
+#9 /home/app/public_html/panaderia/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Stock))
+#10 /home/app/public_html/panaderia/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /home/app/public_html/panaderia/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-07-02 04:02:42 --> Cannot add or update a child row: a foreign key constraint fails (`app_panaderia`.`stock`, CONSTRAINT `stock_ibfk_1` FOREIGN KEY (`pro_id`) REFERENCES `productos` (`pro_id`) ON UPDATE CASCADE)
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 295.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(295): mysqli->query('INSERT INTO `stock` (`st_CantidadAdquirida`, `st_CantidadDisponible`, `pro_id`, `st_codigo`, `empresa`) VALUES (\'1111111111\', \'1111111111\', \'1234\', \'123\', \'2\')', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `stock` (`st_CantidadAdquirida`, `st_CantidadDisponible`, `pro_id`, `st_codigo`, `empresa`) VALUES (\'1111111111\', \'1111111111\', \'1234\', \'123\', \'2\')')
+ 3 SYSTEMPATH/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `stock` (`st_CantidadAdquirida`, `st_CantidadDisponible`, `pro_id`, `st_codigo`, `empresa`) VALUES (\'1111111111\', \'1111111111\', \'1234\', \'123\', \'2\')')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `stock` (`st_CantidadAdquirida`, `st_CantidadDisponible`, `pro_id`, `st_codigo`, `empresa`) VALUES (:st_CantidadAdquirida:, :st_CantidadDisponible:, :pro_id:, :st_codigo:, :empresa:)', [...], false)
+ 5 SYSTEMPATH/Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH/BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH/Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH/Controllers/Stock.php(127): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Stock->create()
+10 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Stock))
+11 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-02 20:52:16 --> mysqli_sql_exception: Unknown column 'usu.perm_id' in 'on clause' in /home/app/public_html/panaderia/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home/app/public_html/panaderia/system/Database/MySQLi/Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /home/app/public_html/panaderia/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /home/app/public_html/panaderia/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /home/app/public_html/panaderia/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /home/app/public_html/panaderia/app/Models/UsuariosModel.php(21): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/app/public_html/panaderia/app/Controllers/Usuarios.php(18): App\Models\UsuariosModel->getUsuarios()
+#6 /home/app/public_html/panaderia/system/CodeIgniter.php(934): App\Controllers\Usuarios->index()
+#7 /home/app/public_html/panaderia/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#8 /home/app/public_html/panaderia/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home/app/public_html/panaderia/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-07-02 20:52:16 --> Unknown column 'usu.perm_id' in 'on clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 295.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(295): mysqli->query('SELECT *
+FROM `usuarios` `usu`
+JOIN `establecimiento` `es` ON `es`.`es_id` = `usu`.`es_id`
+JOIN `permisos` `perm` ON `perm`.`perm_id` = `usu`.`perm_id`
+JOIN `roles` `rol` ON `rol`.`ro_id` = `perm`.`ro_id`
+WHERE `usu`.`us_estado` = 1', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `usuarios` `usu`
+JOIN `establecimiento` `es` ON `es`.`es_id` = `usu`.`es_id`
+JOIN `permisos` `perm` ON `perm`.`perm_id` = `usu`.`perm_id`
+JOIN `roles` `rol` ON `rol`.`ro_id` = `perm`.`ro_id`
+WHERE `usu`.`us_estado` = 1')
+ 3 SYSTEMPATH/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `usuarios` `usu`
+JOIN `establecimiento` `es` ON `es`.`es_id` = `usu`.`es_id`
+JOIN `permisos` `perm` ON `perm`.`perm_id` = `usu`.`perm_id`
+JOIN `roles` `rol` ON `rol`.`ro_id` = `perm`.`ro_id`
+WHERE `usu`.`us_estado` = 1')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `usuarios` `usu`
+JOIN `establecimiento` `es` ON `es`.`es_id` = `usu`.`es_id`
+JOIN `permisos` `perm` ON `perm`.`perm_id` = `usu`.`perm_id`
+JOIN `roles` `rol` ON `rol`.`ro_id` = `perm`.`ro_id`
+WHERE `usu`.`us_estado` = :usu.us_estado:', [...], false)
+ 5 APPPATH/Models/UsuariosModel.php(21): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/Usuarios.php(18): App\Models\UsuariosModel->getUsuarios()
+ 7 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Usuarios->index()
+ 8 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 9 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-02 20:52:19 --> mysqli_sql_exception: Unknown column 'usu.perm_id' in 'on clause' in /home/app/public_html/panaderia/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home/app/public_html/panaderia/system/Database/MySQLi/Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /home/app/public_html/panaderia/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /home/app/public_html/panaderia/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /home/app/public_html/panaderia/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /home/app/public_html/panaderia/app/Models/UsuariosModel.php(21): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/app/public_html/panaderia/app/Controllers/Usuarios.php(18): App\Models\UsuariosModel->getUsuarios()
+#6 /home/app/public_html/panaderia/system/CodeIgniter.php(934): App\Controllers\Usuarios->index()
+#7 /home/app/public_html/panaderia/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#8 /home/app/public_html/panaderia/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home/app/public_html/panaderia/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-07-02 20:52:19 --> Unknown column 'usu.perm_id' in 'on clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 295.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(295): mysqli->query('SELECT *
+FROM `usuarios` `usu`
+JOIN `establecimiento` `es` ON `es`.`es_id` = `usu`.`es_id`
+JOIN `permisos` `perm` ON `perm`.`perm_id` = `usu`.`perm_id`
+JOIN `roles` `rol` ON `rol`.`ro_id` = `perm`.`ro_id`
+WHERE `usu`.`us_estado` = 1', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `usuarios` `usu`
+JOIN `establecimiento` `es` ON `es`.`es_id` = `usu`.`es_id`
+JOIN `permisos` `perm` ON `perm`.`perm_id` = `usu`.`perm_id`
+JOIN `roles` `rol` ON `rol`.`ro_id` = `perm`.`ro_id`
+WHERE `usu`.`us_estado` = 1')
+ 3 SYSTEMPATH/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `usuarios` `usu`
+JOIN `establecimiento` `es` ON `es`.`es_id` = `usu`.`es_id`
+JOIN `permisos` `perm` ON `perm`.`perm_id` = `usu`.`perm_id`
+JOIN `roles` `rol` ON `rol`.`ro_id` = `perm`.`ro_id`
+WHERE `usu`.`us_estado` = 1')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `usuarios` `usu`
+JOIN `establecimiento` `es` ON `es`.`es_id` = `usu`.`es_id`
+JOIN `permisos` `perm` ON `perm`.`perm_id` = `usu`.`perm_id`
+JOIN `roles` `rol` ON `rol`.`ro_id` = `perm`.`ro_id`
+WHERE `usu`.`us_estado` = :usu.us_estado:', [...], false)
+ 5 APPPATH/Models/UsuariosModel.php(21): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/Usuarios.php(18): App\Models\UsuariosModel->getUsuarios()
+ 7 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Usuarios->index()
+ 8 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 9 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-02 20:52:21 --> mysqli_sql_exception: Unknown column 'usu.perm_id' in 'on clause' in /home/app/public_html/panaderia/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home/app/public_html/panaderia/system/Database/MySQLi/Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /home/app/public_html/panaderia/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /home/app/public_html/panaderia/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /home/app/public_html/panaderia/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /home/app/public_html/panaderia/app/Models/UsuariosModel.php(21): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/app/public_html/panaderia/app/Controllers/Usuarios.php(18): App\Models\UsuariosModel->getUsuarios()
+#6 /home/app/public_html/panaderia/system/CodeIgniter.php(934): App\Controllers\Usuarios->index()
+#7 /home/app/public_html/panaderia/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#8 /home/app/public_html/panaderia/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home/app/public_html/panaderia/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-07-02 20:52:21 --> Unknown column 'usu.perm_id' in 'on clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 295.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(295): mysqli->query('SELECT *
+FROM `usuarios` `usu`
+JOIN `establecimiento` `es` ON `es`.`es_id` = `usu`.`es_id`
+JOIN `permisos` `perm` ON `perm`.`perm_id` = `usu`.`perm_id`
+JOIN `roles` `rol` ON `rol`.`ro_id` = `perm`.`ro_id`
+WHERE `usu`.`us_estado` = 1', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `usuarios` `usu`
+JOIN `establecimiento` `es` ON `es`.`es_id` = `usu`.`es_id`
+JOIN `permisos` `perm` ON `perm`.`perm_id` = `usu`.`perm_id`
+JOIN `roles` `rol` ON `rol`.`ro_id` = `perm`.`ro_id`
+WHERE `usu`.`us_estado` = 1')
+ 3 SYSTEMPATH/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `usuarios` `usu`
+JOIN `establecimiento` `es` ON `es`.`es_id` = `usu`.`es_id`
+JOIN `permisos` `perm` ON `perm`.`perm_id` = `usu`.`perm_id`
+JOIN `roles` `rol` ON `rol`.`ro_id` = `perm`.`ro_id`
+WHERE `usu`.`us_estado` = 1')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `usuarios` `usu`
+JOIN `establecimiento` `es` ON `es`.`es_id` = `usu`.`es_id`
+JOIN `permisos` `perm` ON `perm`.`perm_id` = `usu`.`perm_id`
+JOIN `roles` `rol` ON `rol`.`ro_id` = `perm`.`ro_id`
+WHERE `usu`.`us_estado` = :usu.us_estado:', [...], false)
+ 5 APPPATH/Models/UsuariosModel.php(21): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/Usuarios.php(18): App\Models\UsuariosModel->getUsuarios()
+ 7 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Usuarios->index()
+ 8 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 9 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-02 20:52:23 --> mysqli_sql_exception: Unknown column 'usu.perm_id' in 'on clause' in /home/app/public_html/panaderia/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home/app/public_html/panaderia/system/Database/MySQLi/Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /home/app/public_html/panaderia/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /home/app/public_html/panaderia/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /home/app/public_html/panaderia/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /home/app/public_html/panaderia/app/Models/UsuariosModel.php(21): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/app/public_html/panaderia/app/Controllers/Usuarios.php(18): App\Models\UsuariosModel->getUsuarios()
+#6 /home/app/public_html/panaderia/system/CodeIgniter.php(934): App\Controllers\Usuarios->index()
+#7 /home/app/public_html/panaderia/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#8 /home/app/public_html/panaderia/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home/app/public_html/panaderia/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-07-02 20:52:23 --> Unknown column 'usu.perm_id' in 'on clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 295.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(295): mysqli->query('SELECT *
+FROM `usuarios` `usu`
+JOIN `establecimiento` `es` ON `es`.`es_id` = `usu`.`es_id`
+JOIN `permisos` `perm` ON `perm`.`perm_id` = `usu`.`perm_id`
+JOIN `roles` `rol` ON `rol`.`ro_id` = `perm`.`ro_id`
+WHERE `usu`.`us_estado` = 1', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `usuarios` `usu`
+JOIN `establecimiento` `es` ON `es`.`es_id` = `usu`.`es_id`
+JOIN `permisos` `perm` ON `perm`.`perm_id` = `usu`.`perm_id`
+JOIN `roles` `rol` ON `rol`.`ro_id` = `perm`.`ro_id`
+WHERE `usu`.`us_estado` = 1')
+ 3 SYSTEMPATH/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `usuarios` `usu`
+JOIN `establecimiento` `es` ON `es`.`es_id` = `usu`.`es_id`
+JOIN `permisos` `perm` ON `perm`.`perm_id` = `usu`.`perm_id`
+JOIN `roles` `rol` ON `rol`.`ro_id` = `perm`.`ro_id`
+WHERE `usu`.`us_estado` = 1')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `usuarios` `usu`
+JOIN `establecimiento` `es` ON `es`.`es_id` = `usu`.`es_id`
+JOIN `permisos` `perm` ON `perm`.`perm_id` = `usu`.`perm_id`
+JOIN `roles` `rol` ON `rol`.`ro_id` = `perm`.`ro_id`
+WHERE `usu`.`us_estado` = :usu.us_estado:', [...], false)
+ 5 APPPATH/Models/UsuariosModel.php(21): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/Usuarios.php(18): App\Models\UsuariosModel->getUsuarios()
+ 7 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Usuarios->index()
+ 8 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 9 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-02 20:52:28 --> mysqli_sql_exception: Unknown column 'usu.perm_id' in 'on clause' in /home/app/public_html/panaderia/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home/app/public_html/panaderia/system/Database/MySQLi/Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /home/app/public_html/panaderia/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /home/app/public_html/panaderia/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /home/app/public_html/panaderia/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /home/app/public_html/panaderia/app/Models/UsuariosModel.php(21): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/app/public_html/panaderia/app/Controllers/Usuarios.php(18): App\Models\UsuariosModel->getUsuarios()
+#6 /home/app/public_html/panaderia/system/CodeIgniter.php(934): App\Controllers\Usuarios->index()
+#7 /home/app/public_html/panaderia/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#8 /home/app/public_html/panaderia/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home/app/public_html/panaderia/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-07-02 20:52:28 --> Unknown column 'usu.perm_id' in 'on clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 295.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(295): mysqli->query('SELECT *
+FROM `usuarios` `usu`
+JOIN `establecimiento` `es` ON `es`.`es_id` = `usu`.`es_id`
+JOIN `permisos` `perm` ON `perm`.`perm_id` = `usu`.`perm_id`
+JOIN `roles` `rol` ON `rol`.`ro_id` = `perm`.`ro_id`
+WHERE `usu`.`us_estado` = 1', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `usuarios` `usu`
+JOIN `establecimiento` `es` ON `es`.`es_id` = `usu`.`es_id`
+JOIN `permisos` `perm` ON `perm`.`perm_id` = `usu`.`perm_id`
+JOIN `roles` `rol` ON `rol`.`ro_id` = `perm`.`ro_id`
+WHERE `usu`.`us_estado` = 1')
+ 3 SYSTEMPATH/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `usuarios` `usu`
+JOIN `establecimiento` `es` ON `es`.`es_id` = `usu`.`es_id`
+JOIN `permisos` `perm` ON `perm`.`perm_id` = `usu`.`perm_id`
+JOIN `roles` `rol` ON `rol`.`ro_id` = `perm`.`ro_id`
+WHERE `usu`.`us_estado` = 1')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `usuarios` `usu`
+JOIN `establecimiento` `es` ON `es`.`es_id` = `usu`.`es_id`
+JOIN `permisos` `perm` ON `perm`.`perm_id` = `usu`.`perm_id`
+JOIN `roles` `rol` ON `rol`.`ro_id` = `perm`.`ro_id`
+WHERE `usu`.`us_estado` = :usu.us_estado:', [...], false)
+ 5 APPPATH/Models/UsuariosModel.php(21): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/Usuarios.php(18): App\Models\UsuariosModel->getUsuarios()
+ 7 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Usuarios->index()
+ 8 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 9 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-02 20:52:38 --> mysqli_sql_exception: Unknown column 'usu.perm_id' in 'on clause' in /home/app/public_html/panaderia/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home/app/public_html/panaderia/system/Database/MySQLi/Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /home/app/public_html/panaderia/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /home/app/public_html/panaderia/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /home/app/public_html/panaderia/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /home/app/public_html/panaderia/app/Models/UsuariosModel.php(21): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/app/public_html/panaderia/app/Controllers/Usuarios.php(18): App\Models\UsuariosModel->getUsuarios()
+#6 /home/app/public_html/panaderia/system/CodeIgniter.php(934): App\Controllers\Usuarios->index()
+#7 /home/app/public_html/panaderia/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#8 /home/app/public_html/panaderia/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home/app/public_html/panaderia/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-07-02 20:52:38 --> Unknown column 'usu.perm_id' in 'on clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 295.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(295): mysqli->query('SELECT *
+FROM `usuarios` `usu`
+JOIN `establecimiento` `es` ON `es`.`es_id` = `usu`.`es_id`
+JOIN `permisos` `perm` ON `perm`.`perm_id` = `usu`.`perm_id`
+JOIN `roles` `rol` ON `rol`.`ro_id` = `perm`.`ro_id`
+WHERE `usu`.`us_estado` = 1', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `usuarios` `usu`
+JOIN `establecimiento` `es` ON `es`.`es_id` = `usu`.`es_id`
+JOIN `permisos` `perm` ON `perm`.`perm_id` = `usu`.`perm_id`
+JOIN `roles` `rol` ON `rol`.`ro_id` = `perm`.`ro_id`
+WHERE `usu`.`us_estado` = 1')
+ 3 SYSTEMPATH/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `usuarios` `usu`
+JOIN `establecimiento` `es` ON `es`.`es_id` = `usu`.`es_id`
+JOIN `permisos` `perm` ON `perm`.`perm_id` = `usu`.`perm_id`
+JOIN `roles` `rol` ON `rol`.`ro_id` = `perm`.`ro_id`
+WHERE `usu`.`us_estado` = 1')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `usuarios` `usu`
+JOIN `establecimiento` `es` ON `es`.`es_id` = `usu`.`es_id`
+JOIN `permisos` `perm` ON `perm`.`perm_id` = `usu`.`perm_id`
+JOIN `roles` `rol` ON `rol`.`ro_id` = `perm`.`ro_id`
+WHERE `usu`.`us_estado` = :usu.us_estado:', [...], false)
+ 5 APPPATH/Models/UsuariosModel.php(21): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/Usuarios.php(18): App\Models\UsuariosModel->getUsuarios()
+ 7 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Usuarios->index()
+ 8 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+ 9 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

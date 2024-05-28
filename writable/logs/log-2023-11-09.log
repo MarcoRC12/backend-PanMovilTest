@@ -1,0 +1,372 @@
+ERROR - 2023-11-09 18:28:01 --> mysqli_sql_exception: Unknown column 'usumo.usumo_estado' in 'where clause' in /home/app/public_html/panaderia/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home/app/public_html/panaderia/system/Database/MySQLi/Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /home/app/public_html/panaderia/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /home/app/public_html/panaderia/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /home/app/public_html/panaderia/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /home/app/public_html/panaderia/app/Models/UsuariosmovilModel.php(18): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/app/public_html/panaderia/app/Controllers/Usuariosmovil.php(18): App\Models\UsuariosmovilModel->getUsuariosmovil()
+#6 /home/app/public_html/panaderia/system/CodeIgniter.php(934): App\Controllers\Usuariosmovil->index()
+#7 /home/app/public_html/panaderia/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuariosmovil))
+#8 /home/app/public_html/panaderia/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home/app/public_html/panaderia/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-11-09 18:28:01 --> Unknown column 'usumo.usumo_estado' in 'where clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 295.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(295): mysqli->query('SELECT *
+FROM `usuariosmovil`
+JOIN `clientes` `cl` ON `cl`.`cl_id` = `usumo`.`cl_id`
+WHERE `usumo`.`usumo_estado` = 1', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `usuariosmovil`
+JOIN `clientes` `cl` ON `cl`.`cl_id` = `usumo`.`cl_id`
+WHERE `usumo`.`usumo_estado` = 1')
+ 3 SYSTEMPATH/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `usuariosmovil`
+JOIN `clientes` `cl` ON `cl`.`cl_id` = `usumo`.`cl_id`
+WHERE `usumo`.`usumo_estado` = 1')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `usuariosmovil`
+JOIN `clientes` `cl` ON `cl`.`cl_id` = `usumo`.`cl_id`
+WHERE `usumo`.`usumo_estado` = :usumo.usumo_estado:', [...], false)
+ 5 APPPATH/Models/UsuariosmovilModel.php(18): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/Usuariosmovil.php(18): App\Models\UsuariosmovilModel->getUsuariosmovil()
+ 7 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Usuariosmovil->index()
+ 8 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuariosmovil))
+ 9 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-09 18:28:03 --> mysqli_sql_exception: Unknown column 'usumo.usumo_estado' in 'where clause' in /home/app/public_html/panaderia/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home/app/public_html/panaderia/system/Database/MySQLi/Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /home/app/public_html/panaderia/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /home/app/public_html/panaderia/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /home/app/public_html/panaderia/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /home/app/public_html/panaderia/app/Models/UsuariosmovilModel.php(18): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/app/public_html/panaderia/app/Controllers/Usuariosmovil.php(18): App\Models\UsuariosmovilModel->getUsuariosmovil()
+#6 /home/app/public_html/panaderia/system/CodeIgniter.php(934): App\Controllers\Usuariosmovil->index()
+#7 /home/app/public_html/panaderia/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuariosmovil))
+#8 /home/app/public_html/panaderia/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home/app/public_html/panaderia/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-11-09 18:28:03 --> Unknown column 'usumo.usumo_estado' in 'where clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 295.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(295): mysqli->query('SELECT *
+FROM `usuariosmovil`
+JOIN `clientes` `cl` ON `cl`.`cl_id` = `usumo`.`cl_id`
+WHERE `usumo`.`usumo_estado` = 1', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `usuariosmovil`
+JOIN `clientes` `cl` ON `cl`.`cl_id` = `usumo`.`cl_id`
+WHERE `usumo`.`usumo_estado` = 1')
+ 3 SYSTEMPATH/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `usuariosmovil`
+JOIN `clientes` `cl` ON `cl`.`cl_id` = `usumo`.`cl_id`
+WHERE `usumo`.`usumo_estado` = 1')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `usuariosmovil`
+JOIN `clientes` `cl` ON `cl`.`cl_id` = `usumo`.`cl_id`
+WHERE `usumo`.`usumo_estado` = :usumo.usumo_estado:', [...], false)
+ 5 APPPATH/Models/UsuariosmovilModel.php(18): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/Usuariosmovil.php(18): App\Models\UsuariosmovilModel->getUsuariosmovil()
+ 7 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Usuariosmovil->index()
+ 8 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuariosmovil))
+ 9 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-09 18:29:34 --> mysqli_sql_exception: Unknown column 'usumo.usumo_estado' in 'where clause' in /home/app/public_html/panaderia/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home/app/public_html/panaderia/system/Database/MySQLi/Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /home/app/public_html/panaderia/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /home/app/public_html/panaderia/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /home/app/public_html/panaderia/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /home/app/public_html/panaderia/app/Models/UsuariosmovilModel.php(18): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/app/public_html/panaderia/app/Controllers/Usuariosmovil.php(18): App\Models\UsuariosmovilModel->getUsuariosmovil()
+#6 /home/app/public_html/panaderia/system/CodeIgniter.php(934): App\Controllers\Usuariosmovil->index()
+#7 /home/app/public_html/panaderia/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuariosmovil))
+#8 /home/app/public_html/panaderia/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home/app/public_html/panaderia/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-11-09 18:29:34 --> Unknown column 'usumo.usumo_estado' in 'where clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 295.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(295): mysqli->query('SELECT *
+FROM `usuariosmovil`
+JOIN `clientes` `cl` ON `cl`.`cl_id` = `usumo`.`cl_id`
+WHERE `usumo`.`usumo_estado` = 1', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `usuariosmovil`
+JOIN `clientes` `cl` ON `cl`.`cl_id` = `usumo`.`cl_id`
+WHERE `usumo`.`usumo_estado` = 1')
+ 3 SYSTEMPATH/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `usuariosmovil`
+JOIN `clientes` `cl` ON `cl`.`cl_id` = `usumo`.`cl_id`
+WHERE `usumo`.`usumo_estado` = 1')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `usuariosmovil`
+JOIN `clientes` `cl` ON `cl`.`cl_id` = `usumo`.`cl_id`
+WHERE `usumo`.`usumo_estado` = :usumo.usumo_estado:', [...], false)
+ 5 APPPATH/Models/UsuariosmovilModel.php(18): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/Usuariosmovil.php(18): App\Models\UsuariosmovilModel->getUsuariosmovil()
+ 7 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Usuariosmovil->index()
+ 8 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuariosmovil))
+ 9 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-09 18:49:58 --> mysqli_sql_exception: Duplicate entry '0' for key 'PRIMARY' in /home/app/public_html/panaderia/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home/app/public_html/panaderia/system/Database/MySQLi/Connection.php(295): mysqli->query('INSERT INTO `us...', 0)
+#1 /home/app/public_html/panaderia/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 /home/app/public_html/panaderia/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 /home/app/public_html/panaderia/system/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 /home/app/public_html/panaderia/system/Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 /home/app/public_html/panaderia/system/BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 /home/app/public_html/panaderia/system/Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 /home/app/public_html/panaderia/app/Controllers/Usuariosmovil.php(135): CodeIgniter\Model->insert(Array)
+#8 /home/app/public_html/panaderia/system/CodeIgniter.php(934): App\Controllers\Usuariosmovil->create()
+#9 /home/app/public_html/panaderia/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuariosmovil))
+#10 /home/app/public_html/panaderia/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /home/app/public_html/panaderia/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-11-09 18:49:58 --> Duplicate entry '0' for key 'PRIMARY'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 295.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(295): mysqli->query('INSERT INTO `usuariosmovil` (`usumo_correo`, `usumo_contrasena`, `usumo_telefono`, `cl_id`) VALUES (\'etham.zamora@gmail.com\', \'12345678\', \'954653204\', \'12\')', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `usuariosmovil` (`usumo_correo`, `usumo_contrasena`, `usumo_telefono`, `cl_id`) VALUES (\'etham.zamora@gmail.com\', \'12345678\', \'954653204\', \'12\')')
+ 3 SYSTEMPATH/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `usuariosmovil` (`usumo_correo`, `usumo_contrasena`, `usumo_telefono`, `cl_id`) VALUES (\'etham.zamora@gmail.com\', \'12345678\', \'954653204\', \'12\')')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `usuariosmovil` (`usumo_correo`, `usumo_contrasena`, `usumo_telefono`, `cl_id`) VALUES (:usumo_correo:, :usumo_contrasena:, :usumo_telefono:, :cl_id:)', [...], false)
+ 5 SYSTEMPATH/Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH/BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH/Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH/Controllers/Usuariosmovil.php(135): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Usuariosmovil->create()
+10 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuariosmovil))
+11 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-09 18:50:44 --> mysqli_sql_exception: Duplicate entry '0' for key 'PRIMARY' in /home/app/public_html/panaderia/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home/app/public_html/panaderia/system/Database/MySQLi/Connection.php(295): mysqli->query('INSERT INTO `us...', 0)
+#1 /home/app/public_html/panaderia/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 /home/app/public_html/panaderia/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 /home/app/public_html/panaderia/system/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 /home/app/public_html/panaderia/system/Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 /home/app/public_html/panaderia/system/BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 /home/app/public_html/panaderia/system/Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 /home/app/public_html/panaderia/app/Controllers/Usuariosmovil.php(135): CodeIgniter\Model->insert(Array)
+#8 /home/app/public_html/panaderia/system/CodeIgniter.php(934): App\Controllers\Usuariosmovil->create()
+#9 /home/app/public_html/panaderia/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuariosmovil))
+#10 /home/app/public_html/panaderia/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /home/app/public_html/panaderia/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-11-09 18:50:44 --> Duplicate entry '0' for key 'PRIMARY'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 295.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(295): mysqli->query('INSERT INTO `usuariosmovil` (`usumo_correo`, `usumo_contrasena`, `usumo_telefono`, `cl_id`) VALUES (\'etham.zamora@gmail.com\', \'12345678\', \'987594970\', \'11\')', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `usuariosmovil` (`usumo_correo`, `usumo_contrasena`, `usumo_telefono`, `cl_id`) VALUES (\'etham.zamora@gmail.com\', \'12345678\', \'987594970\', \'11\')')
+ 3 SYSTEMPATH/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `usuariosmovil` (`usumo_correo`, `usumo_contrasena`, `usumo_telefono`, `cl_id`) VALUES (\'etham.zamora@gmail.com\', \'12345678\', \'987594970\', \'11\')')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `usuariosmovil` (`usumo_correo`, `usumo_contrasena`, `usumo_telefono`, `cl_id`) VALUES (:usumo_correo:, :usumo_contrasena:, :usumo_telefono:, :cl_id:)', [...], false)
+ 5 SYSTEMPATH/Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH/BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH/Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH/Controllers/Usuariosmovil.php(135): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Usuariosmovil->create()
+10 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuariosmovil))
+11 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-09 18:51:30 --> mysqli_sql_exception: Duplicate entry '0' for key 'PRIMARY' in /home/app/public_html/panaderia/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home/app/public_html/panaderia/system/Database/MySQLi/Connection.php(295): mysqli->query('INSERT INTO `us...', 0)
+#1 /home/app/public_html/panaderia/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 /home/app/public_html/panaderia/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 /home/app/public_html/panaderia/system/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 /home/app/public_html/panaderia/system/Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 /home/app/public_html/panaderia/system/BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 /home/app/public_html/panaderia/system/Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 /home/app/public_html/panaderia/app/Controllers/Usuariosmovil.php(135): CodeIgniter\Model->insert(Array)
+#8 /home/app/public_html/panaderia/system/CodeIgniter.php(934): App\Controllers\Usuariosmovil->create()
+#9 /home/app/public_html/panaderia/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuariosmovil))
+#10 /home/app/public_html/panaderia/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /home/app/public_html/panaderia/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-11-09 18:51:30 --> Duplicate entry '0' for key 'PRIMARY'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 295.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(295): mysqli->query('INSERT INTO `usuariosmovil` (`usumo_correo`, `usumo_contrasena`, `usumo_telefono`, `cl_id`) VALUES (\'etham.zamora@gmail.com\', \'12345678\', \'987594970\', \'11\')', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `usuariosmovil` (`usumo_correo`, `usumo_contrasena`, `usumo_telefono`, `cl_id`) VALUES (\'etham.zamora@gmail.com\', \'12345678\', \'987594970\', \'11\')')
+ 3 SYSTEMPATH/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `usuariosmovil` (`usumo_correo`, `usumo_contrasena`, `usumo_telefono`, `cl_id`) VALUES (\'etham.zamora@gmail.com\', \'12345678\', \'987594970\', \'11\')')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `usuariosmovil` (`usumo_correo`, `usumo_contrasena`, `usumo_telefono`, `cl_id`) VALUES (:usumo_correo:, :usumo_contrasena:, :usumo_telefono:, :cl_id:)', [...], false)
+ 5 SYSTEMPATH/Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH/BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH/Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH/Controllers/Usuariosmovil.php(135): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Usuariosmovil->create()
+10 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuariosmovil))
+11 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-09 18:53:11 --> mysqli_sql_exception: Duplicate entry '0' for key 'PRIMARY' in /home/app/public_html/panaderia/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home/app/public_html/panaderia/system/Database/MySQLi/Connection.php(295): mysqli->query('INSERT INTO `us...', 0)
+#1 /home/app/public_html/panaderia/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 /home/app/public_html/panaderia/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 /home/app/public_html/panaderia/system/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 /home/app/public_html/panaderia/system/Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 /home/app/public_html/panaderia/system/BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 /home/app/public_html/panaderia/system/Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 /home/app/public_html/panaderia/app/Controllers/Usuariosmovil.php(135): CodeIgniter\Model->insert(Array)
+#8 /home/app/public_html/panaderia/system/CodeIgniter.php(934): App\Controllers\Usuariosmovil->create()
+#9 /home/app/public_html/panaderia/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuariosmovil))
+#10 /home/app/public_html/panaderia/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /home/app/public_html/panaderia/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-11-09 18:53:11 --> Duplicate entry '0' for key 'PRIMARY'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 295.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(295): mysqli->query('INSERT INTO `usuariosmovil` (`usumo_correo`, `usumo_contrasena`, `usumo_telefono`, `cl_id`) VALUES (\'etham.zamora@gmail.com\', \'12345678\', \'987594970\', \'11\')', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `usuariosmovil` (`usumo_correo`, `usumo_contrasena`, `usumo_telefono`, `cl_id`) VALUES (\'etham.zamora@gmail.com\', \'12345678\', \'987594970\', \'11\')')
+ 3 SYSTEMPATH/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `usuariosmovil` (`usumo_correo`, `usumo_contrasena`, `usumo_telefono`, `cl_id`) VALUES (\'etham.zamora@gmail.com\', \'12345678\', \'987594970\', \'11\')')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `usuariosmovil` (`usumo_correo`, `usumo_contrasena`, `usumo_telefono`, `cl_id`) VALUES (:usumo_correo:, :usumo_contrasena:, :usumo_telefono:, :cl_id:)', [...], false)
+ 5 SYSTEMPATH/Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH/BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH/Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH/Controllers/Usuariosmovil.php(135): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Usuariosmovil->create()
+10 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuariosmovil))
+11 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-09 18:53:56 --> mysqli_sql_exception: Duplicate entry '0' for key 'PRIMARY' in /home/app/public_html/panaderia/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home/app/public_html/panaderia/system/Database/MySQLi/Connection.php(295): mysqli->query('INSERT INTO `us...', 0)
+#1 /home/app/public_html/panaderia/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 /home/app/public_html/panaderia/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 /home/app/public_html/panaderia/system/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 /home/app/public_html/panaderia/system/Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 /home/app/public_html/panaderia/system/BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 /home/app/public_html/panaderia/system/Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 /home/app/public_html/panaderia/app/Controllers/Usuariosmovil.php(135): CodeIgniter\Model->insert(Array)
+#8 /home/app/public_html/panaderia/system/CodeIgniter.php(934): App\Controllers\Usuariosmovil->create()
+#9 /home/app/public_html/panaderia/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuariosmovil))
+#10 /home/app/public_html/panaderia/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /home/app/public_html/panaderia/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-11-09 18:53:56 --> Duplicate entry '0' for key 'PRIMARY'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 295.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(295): mysqli->query('INSERT INTO `usuariosmovil` (`usumo_correo`, `usumo_contrasena`, `usumo_telefono`, `cl_id`) VALUES (\'etham.zamora@gmail.com\', \'12345678\', \'987594970\', \'11\')', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `usuariosmovil` (`usumo_correo`, `usumo_contrasena`, `usumo_telefono`, `cl_id`) VALUES (\'etham.zamora@gmail.com\', \'12345678\', \'987594970\', \'11\')')
+ 3 SYSTEMPATH/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `usuariosmovil` (`usumo_correo`, `usumo_contrasena`, `usumo_telefono`, `cl_id`) VALUES (\'etham.zamora@gmail.com\', \'12345678\', \'987594970\', \'11\')')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `usuariosmovil` (`usumo_correo`, `usumo_contrasena`, `usumo_telefono`, `cl_id`) VALUES (:usumo_correo:, :usumo_contrasena:, :usumo_telefono:, :cl_id:)', [...], false)
+ 5 SYSTEMPATH/Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH/BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH/Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH/Controllers/Usuariosmovil.php(135): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Usuariosmovil->create()
+10 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuariosmovil))
+11 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-09 18:59:49 --> mysqli_sql_exception: Duplicate entry '0' for key 'PRIMARY' in /home/app/public_html/panaderia/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home/app/public_html/panaderia/system/Database/MySQLi/Connection.php(295): mysqli->query('INSERT INTO `us...', 0)
+#1 /home/app/public_html/panaderia/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 /home/app/public_html/panaderia/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 /home/app/public_html/panaderia/system/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 /home/app/public_html/panaderia/system/Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 /home/app/public_html/panaderia/system/BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 /home/app/public_html/panaderia/system/Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 /home/app/public_html/panaderia/app/Controllers/Usuariosmovil.php(135): CodeIgniter\Model->insert(Array)
+#8 /home/app/public_html/panaderia/system/CodeIgniter.php(934): App\Controllers\Usuariosmovil->create()
+#9 /home/app/public_html/panaderia/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuariosmovil))
+#10 /home/app/public_html/panaderia/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /home/app/public_html/panaderia/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-11-09 18:59:49 --> Duplicate entry '0' for key 'PRIMARY'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 295.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(295): mysqli->query('INSERT INTO `usuariosmovil` (`usumo_correo`, `usumo_contrasena`, `usumo_telefono`, `cl_id`) VALUES (\'dfasdfasdfafd\', \'adfadf\', \'1241324\', \'11\')', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `usuariosmovil` (`usumo_correo`, `usumo_contrasena`, `usumo_telefono`, `cl_id`) VALUES (\'dfasdfasdfafd\', \'adfadf\', \'1241324\', \'11\')')
+ 3 SYSTEMPATH/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `usuariosmovil` (`usumo_correo`, `usumo_contrasena`, `usumo_telefono`, `cl_id`) VALUES (\'dfasdfasdfafd\', \'adfadf\', \'1241324\', \'11\')')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `usuariosmovil` (`usumo_correo`, `usumo_contrasena`, `usumo_telefono`, `cl_id`) VALUES (:usumo_correo:, :usumo_contrasena:, :usumo_telefono:, :cl_id:)', [...], false)
+ 5 SYSTEMPATH/Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH/BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH/Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH/Controllers/Usuariosmovil.php(135): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Usuariosmovil->create()
+10 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuariosmovil))
+11 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-09 19:04:40 --> mysqli_sql_exception: Duplicate entry '0' for key 'PRIMARY' in /home/app/public_html/panaderia/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home/app/public_html/panaderia/system/Database/MySQLi/Connection.php(295): mysqli->query('INSERT INTO `us...', 0)
+#1 /home/app/public_html/panaderia/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 /home/app/public_html/panaderia/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 /home/app/public_html/panaderia/system/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 /home/app/public_html/panaderia/system/Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 /home/app/public_html/panaderia/system/BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 /home/app/public_html/panaderia/system/Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 /home/app/public_html/panaderia/app/Controllers/Usuariosmovil.php(135): CodeIgniter\Model->insert(Array)
+#8 /home/app/public_html/panaderia/system/CodeIgniter.php(934): App\Controllers\Usuariosmovil->create()
+#9 /home/app/public_html/panaderia/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuariosmovil))
+#10 /home/app/public_html/panaderia/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /home/app/public_html/panaderia/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-11-09 19:04:40 --> Duplicate entry '0' for key 'PRIMARY'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 295.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(295): mysqli->query('INSERT INTO `usuariosmovil` (`usumo_correo`, `usumo_contrasena`, `usumo_telefono`, `cl_id`) VALUES (\'dfasdfasdfafd\', \'adfadf\', \'1241324\', \'11\')', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `usuariosmovil` (`usumo_correo`, `usumo_contrasena`, `usumo_telefono`, `cl_id`) VALUES (\'dfasdfasdfafd\', \'adfadf\', \'1241324\', \'11\')')
+ 3 SYSTEMPATH/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `usuariosmovil` (`usumo_correo`, `usumo_contrasena`, `usumo_telefono`, `cl_id`) VALUES (\'dfasdfasdfafd\', \'adfadf\', \'1241324\', \'11\')')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `usuariosmovil` (`usumo_correo`, `usumo_contrasena`, `usumo_telefono`, `cl_id`) VALUES (:usumo_correo:, :usumo_contrasena:, :usumo_telefono:, :cl_id:)', [...], false)
+ 5 SYSTEMPATH/Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH/BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH/Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH/Controllers/Usuariosmovil.php(135): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Usuariosmovil->create()
+10 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuariosmovil))
+11 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-09 19:06:09 --> mysqli_sql_exception: Duplicate entry '0' for key 'PRIMARY' in /home/app/public_html/panaderia/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home/app/public_html/panaderia/system/Database/MySQLi/Connection.php(295): mysqli->query('INSERT INTO `us...', 0)
+#1 /home/app/public_html/panaderia/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 /home/app/public_html/panaderia/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 /home/app/public_html/panaderia/system/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 /home/app/public_html/panaderia/system/Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 /home/app/public_html/panaderia/system/BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 /home/app/public_html/panaderia/system/Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 /home/app/public_html/panaderia/app/Controllers/Usuariosmovil.php(135): CodeIgniter\Model->insert(Array)
+#8 /home/app/public_html/panaderia/system/CodeIgniter.php(934): App\Controllers\Usuariosmovil->create()
+#9 /home/app/public_html/panaderia/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuariosmovil))
+#10 /home/app/public_html/panaderia/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /home/app/public_html/panaderia/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-11-09 19:06:09 --> Duplicate entry '0' for key 'PRIMARY'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 295.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(295): mysqli->query('INSERT INTO `usuariosmovil` (`usumo_correo`, `usumo_contrasena`, `usumo_telefono`, `cl_id`) VALUES (\'dfasdfasdfafd\', \'adfadf\', \'1241324\', \'11\')', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `usuariosmovil` (`usumo_correo`, `usumo_contrasena`, `usumo_telefono`, `cl_id`) VALUES (\'dfasdfasdfafd\', \'adfadf\', \'1241324\', \'11\')')
+ 3 SYSTEMPATH/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `usuariosmovil` (`usumo_correo`, `usumo_contrasena`, `usumo_telefono`, `cl_id`) VALUES (\'dfasdfasdfafd\', \'adfadf\', \'1241324\', \'11\')')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `usuariosmovil` (`usumo_correo`, `usumo_contrasena`, `usumo_telefono`, `cl_id`) VALUES (:usumo_correo:, :usumo_contrasena:, :usumo_telefono:, :cl_id:)', [...], false)
+ 5 SYSTEMPATH/Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH/BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH/Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH/Controllers/Usuariosmovil.php(135): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Usuariosmovil->create()
+10 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuariosmovil))
+11 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-09 19:06:56 --> mysqli_sql_exception: Duplicate entry '0' for key 'PRIMARY' in /home/app/public_html/panaderia/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home/app/public_html/panaderia/system/Database/MySQLi/Connection.php(295): mysqli->query('INSERT INTO `us...', 0)
+#1 /home/app/public_html/panaderia/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 /home/app/public_html/panaderia/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 /home/app/public_html/panaderia/system/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 /home/app/public_html/panaderia/system/Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 /home/app/public_html/panaderia/system/BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 /home/app/public_html/panaderia/system/Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 /home/app/public_html/panaderia/app/Controllers/Usuariosmovil.php(135): CodeIgniter\Model->insert(Array)
+#8 /home/app/public_html/panaderia/system/CodeIgniter.php(934): App\Controllers\Usuariosmovil->create()
+#9 /home/app/public_html/panaderia/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuariosmovil))
+#10 /home/app/public_html/panaderia/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /home/app/public_html/panaderia/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-11-09 19:06:56 --> Duplicate entry '0' for key 'PRIMARY'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 295.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(295): mysqli->query('INSERT INTO `usuariosmovil` (`usumo_correo`, `usumo_contrasena`, `usumo_telefono`, `cl_id`) VALUES (\'dfasdfasdfafd\', \'adfadf\', \'1241324\', \'11\')', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `usuariosmovil` (`usumo_correo`, `usumo_contrasena`, `usumo_telefono`, `cl_id`) VALUES (\'dfasdfasdfafd\', \'adfadf\', \'1241324\', \'11\')')
+ 3 SYSTEMPATH/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `usuariosmovil` (`usumo_correo`, `usumo_contrasena`, `usumo_telefono`, `cl_id`) VALUES (\'dfasdfasdfafd\', \'adfadf\', \'1241324\', \'11\')')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `usuariosmovil` (`usumo_correo`, `usumo_contrasena`, `usumo_telefono`, `cl_id`) VALUES (:usumo_correo:, :usumo_contrasena:, :usumo_telefono:, :cl_id:)', [...], false)
+ 5 SYSTEMPATH/Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH/BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH/Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH/Controllers/Usuariosmovil.php(135): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Usuariosmovil->create()
+10 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuariosmovil))
+11 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

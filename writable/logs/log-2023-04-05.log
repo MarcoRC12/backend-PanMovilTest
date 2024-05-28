@@ -1,0 +1,22 @@
+CRITICAL - 2023-04-05 01:55:05 --> syntax error, unexpected token "echo"
+in APPPATH\Controllers\Saludo.php on line 12.
+ 1 SYSTEMPATH\Router\Router.php(507): CodeIgniter\Router\AutoRouter->getRoute('saludo/comentarios')
+ 2 SYSTEMPATH\Router\Router.php(206): CodeIgniter\Router\Router->autoRoute('saludo/comentarios')
+ 3 SYSTEMPATH\CodeIgniter.php(815): CodeIgniter\Router\Router->handle('saludo/comentarios')
+ 4 SYSTEMPATH\CodeIgniter.php(449): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-05 02:27:58 --> Undefined array key 8
+in APPPATH\Controllers\Saludo.php on line 22.
+ 1 APPPATH\Controllers\Saludo.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 8', 'C:\\xampp\\htdocs\\restful\\app\\Controllers\\Saludo.php', 22)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Saludo->mensajes('8')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Saludo))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-05 02:45:27 --> Undefined array key 78563
+in APPPATH\Controllers\Saludo.php on line 33.
+ 1 APPPATH\Controllers\Saludo.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 78563', 'C:\\xampp\\htdocs\\restful\\app\\Controllers\\Saludo.php', 33)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Saludo->mensajes('78563')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Saludo))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

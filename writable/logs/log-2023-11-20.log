@@ -1,0 +1,410 @@
+ERROR - 2023-11-20 04:11:04 --> mysqli_sql_exception: Table 'app_panaderia.usumoresenas' doesn't exist in /home/app/public_html/panaderia/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home/app/public_html/panaderia/system/Database/MySQLi/Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /home/app/public_html/panaderia/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /home/app/public_html/panaderia/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /home/app/public_html/panaderia/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /home/app/public_html/panaderia/app/Models/ResenasModel.php(18): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/app/public_html/panaderia/app/Controllers/Resenas.php(15): App\Models\ResenasModel->getResenas()
+#6 /home/app/public_html/panaderia/system/CodeIgniter.php(934): App\Controllers\Resenas->index()
+#7 /home/app/public_html/panaderia/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Resenas))
+#8 /home/app/public_html/panaderia/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home/app/public_html/panaderia/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-11-20 04:11:04 --> Table 'app_panaderia.usumoresenas' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 295.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(295): mysqli->query('SELECT *
+FROM `resenas` `re`
+JOIN `productos` `pro` ON `pro`.`pro_id` = `re`.`pro_id`
+JOIN `usumoresenas` `usumo` ON `usumo`.`usumo_id` = `re`.`usumo_id`
+WHERE `re`.`re_estado` = 1', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `resenas` `re`
+JOIN `productos` `pro` ON `pro`.`pro_id` = `re`.`pro_id`
+JOIN `usumoresenas` `usumo` ON `usumo`.`usumo_id` = `re`.`usumo_id`
+WHERE `re`.`re_estado` = 1')
+ 3 SYSTEMPATH/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `resenas` `re`
+JOIN `productos` `pro` ON `pro`.`pro_id` = `re`.`pro_id`
+JOIN `usumoresenas` `usumo` ON `usumo`.`usumo_id` = `re`.`usumo_id`
+WHERE `re`.`re_estado` = 1')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `resenas` `re`
+JOIN `productos` `pro` ON `pro`.`pro_id` = `re`.`pro_id`
+JOIN `usumoresenas` `usumo` ON `usumo`.`usumo_id` = `re`.`usumo_id`
+WHERE `re`.`re_estado` = :re.re_estado:', [...], false)
+ 5 APPPATH/Models/ResenasModel.php(18): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/Resenas.php(15): App\Models\ResenasModel->getResenas()
+ 7 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Resenas->index()
+ 8 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Resenas))
+ 9 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-20 04:11:05 --> mysqli_sql_exception: Table 'app_panaderia.usumoresenas' doesn't exist in /home/app/public_html/panaderia/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home/app/public_html/panaderia/system/Database/MySQLi/Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /home/app/public_html/panaderia/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /home/app/public_html/panaderia/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /home/app/public_html/panaderia/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /home/app/public_html/panaderia/app/Models/ResenasModel.php(18): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/app/public_html/panaderia/app/Controllers/Resenas.php(15): App\Models\ResenasModel->getResenas()
+#6 /home/app/public_html/panaderia/system/CodeIgniter.php(934): App\Controllers\Resenas->index()
+#7 /home/app/public_html/panaderia/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Resenas))
+#8 /home/app/public_html/panaderia/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home/app/public_html/panaderia/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-11-20 04:11:05 --> Table 'app_panaderia.usumoresenas' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 295.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(295): mysqli->query('SELECT *
+FROM `resenas` `re`
+JOIN `productos` `pro` ON `pro`.`pro_id` = `re`.`pro_id`
+JOIN `usumoresenas` `usumo` ON `usumo`.`usumo_id` = `re`.`usumo_id`
+WHERE `re`.`re_estado` = 1', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `resenas` `re`
+JOIN `productos` `pro` ON `pro`.`pro_id` = `re`.`pro_id`
+JOIN `usumoresenas` `usumo` ON `usumo`.`usumo_id` = `re`.`usumo_id`
+WHERE `re`.`re_estado` = 1')
+ 3 SYSTEMPATH/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `resenas` `re`
+JOIN `productos` `pro` ON `pro`.`pro_id` = `re`.`pro_id`
+JOIN `usumoresenas` `usumo` ON `usumo`.`usumo_id` = `re`.`usumo_id`
+WHERE `re`.`re_estado` = 1')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `resenas` `re`
+JOIN `productos` `pro` ON `pro`.`pro_id` = `re`.`pro_id`
+JOIN `usumoresenas` `usumo` ON `usumo`.`usumo_id` = `re`.`usumo_id`
+WHERE `re`.`re_estado` = :re.re_estado:', [...], false)
+ 5 APPPATH/Models/ResenasModel.php(18): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/Resenas.php(15): App\Models\ResenasModel->getResenas()
+ 7 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Resenas->index()
+ 8 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Resenas))
+ 9 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-20 04:11:08 --> mysqli_sql_exception: Table 'app_panaderia.usumoresenas' doesn't exist in /home/app/public_html/panaderia/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home/app/public_html/panaderia/system/Database/MySQLi/Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /home/app/public_html/panaderia/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /home/app/public_html/panaderia/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /home/app/public_html/panaderia/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /home/app/public_html/panaderia/app/Models/ResenasModel.php(18): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/app/public_html/panaderia/app/Controllers/Resenas.php(15): App\Models\ResenasModel->getResenas()
+#6 /home/app/public_html/panaderia/system/CodeIgniter.php(934): App\Controllers\Resenas->index()
+#7 /home/app/public_html/panaderia/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Resenas))
+#8 /home/app/public_html/panaderia/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home/app/public_html/panaderia/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-11-20 04:11:08 --> Table 'app_panaderia.usumoresenas' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 295.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(295): mysqli->query('SELECT *
+FROM `resenas` `re`
+JOIN `productos` `pro` ON `pro`.`pro_id` = `re`.`pro_id`
+JOIN `usumoresenas` `usumo` ON `usumo`.`usumo_id` = `re`.`usumo_id`
+WHERE `re`.`re_estado` = 1', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `resenas` `re`
+JOIN `productos` `pro` ON `pro`.`pro_id` = `re`.`pro_id`
+JOIN `usumoresenas` `usumo` ON `usumo`.`usumo_id` = `re`.`usumo_id`
+WHERE `re`.`re_estado` = 1')
+ 3 SYSTEMPATH/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `resenas` `re`
+JOIN `productos` `pro` ON `pro`.`pro_id` = `re`.`pro_id`
+JOIN `usumoresenas` `usumo` ON `usumo`.`usumo_id` = `re`.`usumo_id`
+WHERE `re`.`re_estado` = 1')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `resenas` `re`
+JOIN `productos` `pro` ON `pro`.`pro_id` = `re`.`pro_id`
+JOIN `usumoresenas` `usumo` ON `usumo`.`usumo_id` = `re`.`usumo_id`
+WHERE `re`.`re_estado` = :re.re_estado:', [...], false)
+ 5 APPPATH/Models/ResenasModel.php(18): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/Resenas.php(15): App\Models\ResenasModel->getResenas()
+ 7 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Resenas->index()
+ 8 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Resenas))
+ 9 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-20 04:11:19 --> mysqli_sql_exception: Table 'app_panaderia.usumoresenas' doesn't exist in /home/app/public_html/panaderia/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home/app/public_html/panaderia/system/Database/MySQLi/Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /home/app/public_html/panaderia/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /home/app/public_html/panaderia/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /home/app/public_html/panaderia/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /home/app/public_html/panaderia/app/Models/ResenasModel.php(18): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/app/public_html/panaderia/app/Controllers/Resenas.php(15): App\Models\ResenasModel->getResenas()
+#6 /home/app/public_html/panaderia/system/CodeIgniter.php(934): App\Controllers\Resenas->index()
+#7 /home/app/public_html/panaderia/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Resenas))
+#8 /home/app/public_html/panaderia/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home/app/public_html/panaderia/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-11-20 04:11:19 --> Table 'app_panaderia.usumoresenas' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 295.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(295): mysqli->query('SELECT *
+FROM `resenas` `re`
+JOIN `productos` `pro` ON `pro`.`pro_id` = `re`.`pro_id`
+JOIN `usumoresenas` `usumo` ON `usumo`.`usumo_id` = `re`.`usumo_id`
+WHERE `re`.`re_estado` = 1', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `resenas` `re`
+JOIN `productos` `pro` ON `pro`.`pro_id` = `re`.`pro_id`
+JOIN `usumoresenas` `usumo` ON `usumo`.`usumo_id` = `re`.`usumo_id`
+WHERE `re`.`re_estado` = 1')
+ 3 SYSTEMPATH/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `resenas` `re`
+JOIN `productos` `pro` ON `pro`.`pro_id` = `re`.`pro_id`
+JOIN `usumoresenas` `usumo` ON `usumo`.`usumo_id` = `re`.`usumo_id`
+WHERE `re`.`re_estado` = 1')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `resenas` `re`
+JOIN `productos` `pro` ON `pro`.`pro_id` = `re`.`pro_id`
+JOIN `usumoresenas` `usumo` ON `usumo`.`usumo_id` = `re`.`usumo_id`
+WHERE `re`.`re_estado` = :re.re_estado:', [...], false)
+ 5 APPPATH/Models/ResenasModel.php(18): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/Resenas.php(15): App\Models\ResenasModel->getResenas()
+ 7 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Resenas->index()
+ 8 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Resenas))
+ 9 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-20 04:11:36 --> mysqli_sql_exception: Table 'app_panaderia.usumoresenas' doesn't exist in /home/app/public_html/panaderia/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home/app/public_html/panaderia/system/Database/MySQLi/Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /home/app/public_html/panaderia/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /home/app/public_html/panaderia/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /home/app/public_html/panaderia/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /home/app/public_html/panaderia/app/Models/ResenasModel.php(18): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/app/public_html/panaderia/app/Controllers/Resenas.php(15): App\Models\ResenasModel->getResenas()
+#6 /home/app/public_html/panaderia/system/CodeIgniter.php(934): App\Controllers\Resenas->index()
+#7 /home/app/public_html/panaderia/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Resenas))
+#8 /home/app/public_html/panaderia/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home/app/public_html/panaderia/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-11-20 04:11:36 --> Table 'app_panaderia.usumoresenas' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 295.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(295): mysqli->query('SELECT *
+FROM `resenas` `re`
+JOIN `productos` `pro` ON `pro`.`pro_id` = `re`.`pro_id`
+JOIN `usumoresenas` `usumo` ON `usumo`.`usumo_id` = `re`.`usumo_id`
+WHERE `re`.`re_estado` = 1', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `resenas` `re`
+JOIN `productos` `pro` ON `pro`.`pro_id` = `re`.`pro_id`
+JOIN `usumoresenas` `usumo` ON `usumo`.`usumo_id` = `re`.`usumo_id`
+WHERE `re`.`re_estado` = 1')
+ 3 SYSTEMPATH/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `resenas` `re`
+JOIN `productos` `pro` ON `pro`.`pro_id` = `re`.`pro_id`
+JOIN `usumoresenas` `usumo` ON `usumo`.`usumo_id` = `re`.`usumo_id`
+WHERE `re`.`re_estado` = 1')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `resenas` `re`
+JOIN `productos` `pro` ON `pro`.`pro_id` = `re`.`pro_id`
+JOIN `usumoresenas` `usumo` ON `usumo`.`usumo_id` = `re`.`usumo_id`
+WHERE `re`.`re_estado` = :re.re_estado:', [...], false)
+ 5 APPPATH/Models/ResenasModel.php(18): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/Resenas.php(15): App\Models\ResenasModel->getResenas()
+ 7 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Resenas->index()
+ 8 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Resenas))
+ 9 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-20 04:11:40 --> mysqli_sql_exception: Table 'app_panaderia.usumoresenas' doesn't exist in /home/app/public_html/panaderia/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home/app/public_html/panaderia/system/Database/MySQLi/Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /home/app/public_html/panaderia/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /home/app/public_html/panaderia/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /home/app/public_html/panaderia/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /home/app/public_html/panaderia/app/Models/ResenasModel.php(18): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/app/public_html/panaderia/app/Controllers/Resenas.php(15): App\Models\ResenasModel->getResenas()
+#6 /home/app/public_html/panaderia/system/CodeIgniter.php(934): App\Controllers\Resenas->index()
+#7 /home/app/public_html/panaderia/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Resenas))
+#8 /home/app/public_html/panaderia/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home/app/public_html/panaderia/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-11-20 04:11:40 --> Table 'app_panaderia.usumoresenas' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 295.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(295): mysqli->query('SELECT *
+FROM `resenas` `re`
+JOIN `productos` `pro` ON `pro`.`pro_id` = `re`.`pro_id`
+JOIN `usumoresenas` `usumo` ON `usumo`.`usumo_id` = `re`.`usumo_id`
+WHERE `re`.`re_estado` = 1', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `resenas` `re`
+JOIN `productos` `pro` ON `pro`.`pro_id` = `re`.`pro_id`
+JOIN `usumoresenas` `usumo` ON `usumo`.`usumo_id` = `re`.`usumo_id`
+WHERE `re`.`re_estado` = 1')
+ 3 SYSTEMPATH/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `resenas` `re`
+JOIN `productos` `pro` ON `pro`.`pro_id` = `re`.`pro_id`
+JOIN `usumoresenas` `usumo` ON `usumo`.`usumo_id` = `re`.`usumo_id`
+WHERE `re`.`re_estado` = 1')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `resenas` `re`
+JOIN `productos` `pro` ON `pro`.`pro_id` = `re`.`pro_id`
+JOIN `usumoresenas` `usumo` ON `usumo`.`usumo_id` = `re`.`usumo_id`
+WHERE `re`.`re_estado` = :re.re_estado:', [...], false)
+ 5 APPPATH/Models/ResenasModel.php(18): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/Resenas.php(15): App\Models\ResenasModel->getResenas()
+ 7 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Resenas->index()
+ 8 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Resenas))
+ 9 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-20 04:11:49 --> mysqli_sql_exception: Table 'app_panaderia.usumoresenas' doesn't exist in /home/app/public_html/panaderia/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home/app/public_html/panaderia/system/Database/MySQLi/Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /home/app/public_html/panaderia/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /home/app/public_html/panaderia/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /home/app/public_html/panaderia/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /home/app/public_html/panaderia/app/Models/ResenasModel.php(18): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/app/public_html/panaderia/app/Controllers/Resenas.php(15): App\Models\ResenasModel->getResenas()
+#6 /home/app/public_html/panaderia/system/CodeIgniter.php(934): App\Controllers\Resenas->index()
+#7 /home/app/public_html/panaderia/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Resenas))
+#8 /home/app/public_html/panaderia/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home/app/public_html/panaderia/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-11-20 04:11:49 --> Table 'app_panaderia.usumoresenas' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 295.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(295): mysqli->query('SELECT *
+FROM `resenas` `re`
+JOIN `productos` `pro` ON `pro`.`pro_id` = `re`.`pro_id`
+JOIN `usumoresenas` `usumo` ON `usumo`.`usumo_id` = `re`.`usumo_id`
+WHERE `re`.`re_estado` = 1', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `resenas` `re`
+JOIN `productos` `pro` ON `pro`.`pro_id` = `re`.`pro_id`
+JOIN `usumoresenas` `usumo` ON `usumo`.`usumo_id` = `re`.`usumo_id`
+WHERE `re`.`re_estado` = 1')
+ 3 SYSTEMPATH/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `resenas` `re`
+JOIN `productos` `pro` ON `pro`.`pro_id` = `re`.`pro_id`
+JOIN `usumoresenas` `usumo` ON `usumo`.`usumo_id` = `re`.`usumo_id`
+WHERE `re`.`re_estado` = 1')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `resenas` `re`
+JOIN `productos` `pro` ON `pro`.`pro_id` = `re`.`pro_id`
+JOIN `usumoresenas` `usumo` ON `usumo`.`usumo_id` = `re`.`usumo_id`
+WHERE `re`.`re_estado` = :re.re_estado:', [...], false)
+ 5 APPPATH/Models/ResenasModel.php(18): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/Resenas.php(15): App\Models\ResenasModel->getResenas()
+ 7 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Resenas->index()
+ 8 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Resenas))
+ 9 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-20 04:12:04 --> mysqli_sql_exception: Table 'app_panaderia.usumoresenas' doesn't exist in /home/app/public_html/panaderia/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home/app/public_html/panaderia/system/Database/MySQLi/Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /home/app/public_html/panaderia/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /home/app/public_html/panaderia/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /home/app/public_html/panaderia/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /home/app/public_html/panaderia/app/Models/ResenasModel.php(18): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/app/public_html/panaderia/app/Controllers/Resenas.php(15): App\Models\ResenasModel->getResenas()
+#6 /home/app/public_html/panaderia/system/CodeIgniter.php(934): App\Controllers\Resenas->index()
+#7 /home/app/public_html/panaderia/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Resenas))
+#8 /home/app/public_html/panaderia/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home/app/public_html/panaderia/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-11-20 04:12:04 --> Table 'app_panaderia.usumoresenas' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 295.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(295): mysqli->query('SELECT *
+FROM `resenas` `re`
+JOIN `productos` `pro` ON `pro`.`pro_id` = `re`.`pro_id`
+JOIN `usumoresenas` `usumo` ON `usumo`.`usumo_id` = `re`.`usumo_id`
+WHERE `re`.`re_estado` = 1', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `resenas` `re`
+JOIN `productos` `pro` ON `pro`.`pro_id` = `re`.`pro_id`
+JOIN `usumoresenas` `usumo` ON `usumo`.`usumo_id` = `re`.`usumo_id`
+WHERE `re`.`re_estado` = 1')
+ 3 SYSTEMPATH/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `resenas` `re`
+JOIN `productos` `pro` ON `pro`.`pro_id` = `re`.`pro_id`
+JOIN `usumoresenas` `usumo` ON `usumo`.`usumo_id` = `re`.`usumo_id`
+WHERE `re`.`re_estado` = 1')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `resenas` `re`
+JOIN `productos` `pro` ON `pro`.`pro_id` = `re`.`pro_id`
+JOIN `usumoresenas` `usumo` ON `usumo`.`usumo_id` = `re`.`usumo_id`
+WHERE `re`.`re_estado` = :re.re_estado:', [...], false)
+ 5 APPPATH/Models/ResenasModel.php(18): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/Resenas.php(15): App\Models\ResenasModel->getResenas()
+ 7 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Resenas->index()
+ 8 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Resenas))
+ 9 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-20 04:12:09 --> mysqli_sql_exception: Table 'app_panaderia.usumoresenas' doesn't exist in /home/app/public_html/panaderia/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home/app/public_html/panaderia/system/Database/MySQLi/Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /home/app/public_html/panaderia/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /home/app/public_html/panaderia/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /home/app/public_html/panaderia/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /home/app/public_html/panaderia/app/Models/ResenasModel.php(18): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/app/public_html/panaderia/app/Controllers/Resenas.php(15): App\Models\ResenasModel->getResenas()
+#6 /home/app/public_html/panaderia/system/CodeIgniter.php(934): App\Controllers\Resenas->index()
+#7 /home/app/public_html/panaderia/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Resenas))
+#8 /home/app/public_html/panaderia/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home/app/public_html/panaderia/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-11-20 04:12:09 --> Table 'app_panaderia.usumoresenas' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 295.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(295): mysqli->query('SELECT *
+FROM `resenas` `re`
+JOIN `productos` `pro` ON `pro`.`pro_id` = `re`.`pro_id`
+JOIN `usumoresenas` `usumo` ON `usumo`.`usumo_id` = `re`.`usumo_id`
+WHERE `re`.`re_estado` = 1', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `resenas` `re`
+JOIN `productos` `pro` ON `pro`.`pro_id` = `re`.`pro_id`
+JOIN `usumoresenas` `usumo` ON `usumo`.`usumo_id` = `re`.`usumo_id`
+WHERE `re`.`re_estado` = 1')
+ 3 SYSTEMPATH/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `resenas` `re`
+JOIN `productos` `pro` ON `pro`.`pro_id` = `re`.`pro_id`
+JOIN `usumoresenas` `usumo` ON `usumo`.`usumo_id` = `re`.`usumo_id`
+WHERE `re`.`re_estado` = 1')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `resenas` `re`
+JOIN `productos` `pro` ON `pro`.`pro_id` = `re`.`pro_id`
+JOIN `usumoresenas` `usumo` ON `usumo`.`usumo_id` = `re`.`usumo_id`
+WHERE `re`.`re_estado` = :re.re_estado:', [...], false)
+ 5 APPPATH/Models/ResenasModel.php(18): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/Resenas.php(15): App\Models\ResenasModel->getResenas()
+ 7 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Resenas->index()
+ 8 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Resenas))
+ 9 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-20 04:12:43 --> mysqli_sql_exception: Table 'app_panaderia.usumoresenas' doesn't exist in /home/app/public_html/panaderia/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home/app/public_html/panaderia/system/Database/MySQLi/Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /home/app/public_html/panaderia/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /home/app/public_html/panaderia/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /home/app/public_html/panaderia/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /home/app/public_html/panaderia/app/Models/ResenasModel.php(18): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/app/public_html/panaderia/app/Controllers/Resenas.php(15): App\Models\ResenasModel->getResenas()
+#6 /home/app/public_html/panaderia/system/CodeIgniter.php(934): App\Controllers\Resenas->index()
+#7 /home/app/public_html/panaderia/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Resenas))
+#8 /home/app/public_html/panaderia/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home/app/public_html/panaderia/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-11-20 04:12:43 --> Table 'app_panaderia.usumoresenas' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 295.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(295): mysqli->query('SELECT *
+FROM `resenas` `re`
+JOIN `productos` `pro` ON `pro`.`pro_id` = `re`.`pro_id`
+JOIN `usumoresenas` `usumo` ON `usumo`.`usumo_id` = `re`.`usumo_id`
+WHERE `re`.`re_estado` = 1', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `resenas` `re`
+JOIN `productos` `pro` ON `pro`.`pro_id` = `re`.`pro_id`
+JOIN `usumoresenas` `usumo` ON `usumo`.`usumo_id` = `re`.`usumo_id`
+WHERE `re`.`re_estado` = 1')
+ 3 SYSTEMPATH/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `resenas` `re`
+JOIN `productos` `pro` ON `pro`.`pro_id` = `re`.`pro_id`
+JOIN `usumoresenas` `usumo` ON `usumo`.`usumo_id` = `re`.`usumo_id`
+WHERE `re`.`re_estado` = 1')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `resenas` `re`
+JOIN `productos` `pro` ON `pro`.`pro_id` = `re`.`pro_id`
+JOIN `usumoresenas` `usumo` ON `usumo`.`usumo_id` = `re`.`usumo_id`
+WHERE `re`.`re_estado` = :re.re_estado:', [...], false)
+ 5 APPPATH/Models/ResenasModel.php(18): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/Resenas.php(15): App\Models\ResenasModel->getResenas()
+ 7 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Resenas->index()
+ 8 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Resenas))
+ 9 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

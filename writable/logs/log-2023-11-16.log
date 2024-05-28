@@ -1,0 +1,150 @@
+CRITICAL - 2023-11-16 04:01:02 --> syntax error, unexpected '}', expecting end of file
+in APPPATH/Models/UsuariosmovilModel.php on line 54.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('/home/app/public_html/panaderia/app/Models/UsuariosmovilModel.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\UsuariosmovilModel')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\UsuariosmovilModel')
+ 4 APPPATH/Controllers/Usuariosmovil.php(37): spl_autoload_call('App\\Models\\UsuariosmovilModel')
+ 5 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Usuariosmovil->show('987594970&antoniozp02&recuperarcontrasena')
+ 6 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuariosmovil))
+ 7 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-16 04:01:16 --> syntax error, unexpected '}', expecting end of file
+in APPPATH/Models/UsuariosmovilModel.php on line 54.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('/home/app/public_html/panaderia/app/Models/UsuariosmovilModel.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\UsuariosmovilModel')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\UsuariosmovilModel')
+ 4 APPPATH/Controllers/Usuariosmovil.php(37): spl_autoload_call('App\\Models\\UsuariosmovilModel')
+ 5 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Usuariosmovil->show('987594970&antoniozp02&recuperarcontrasena')
+ 6 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuariosmovil))
+ 7 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-16 04:01:26 --> syntax error, unexpected '}', expecting end of file
+in APPPATH/Models/UsuariosmovilModel.php on line 54.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('/home/app/public_html/panaderia/app/Models/UsuariosmovilModel.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\UsuariosmovilModel')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\UsuariosmovilModel')
+ 4 APPPATH/Controllers/Usuariosmovil.php(37): spl_autoload_call('App\\Models\\UsuariosmovilModel')
+ 5 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Usuariosmovil->show('987594970&antoniozp02@gmail.com&recuperarcontrasena')
+ 6 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuariosmovil))
+ 7 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-16 04:02:04 --> syntax error, unexpected '}', expecting end of file
+in APPPATH/Models/UsuariosmovilModel.php on line 54.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('/home/app/public_html/panaderia/app/Models/UsuariosmovilModel.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\UsuariosmovilModel')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\UsuariosmovilModel')
+ 4 APPPATH/Controllers/Usuariosmovil.php(37): spl_autoload_call('App\\Models\\UsuariosmovilModel')
+ 5 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Usuariosmovil->show('numerodetelefono&correo&recuperarcontrasena')
+ 6 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuariosmovil))
+ 7 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-16 04:02:25 --> syntax error, unexpected '}', expecting end of file
+in APPPATH/Models/UsuariosmovilModel.php on line 54.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('/home/app/public_html/panaderia/app/Models/UsuariosmovilModel.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\UsuariosmovilModel')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\UsuariosmovilModel')
+ 4 APPPATH/Controllers/Usuariosmovil.php(37): spl_autoload_call('App\\Models\\UsuariosmovilModel')
+ 5 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Usuariosmovil->show('987594970&antoniozp02@gmail.com&recuperarcontrasena')
+ 6 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuariosmovil))
+ 7 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-16 04:02:31 --> syntax error, unexpected '}', expecting end of file
+in APPPATH/Models/UsuariosmovilModel.php on line 54.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('/home/app/public_html/panaderia/app/Models/UsuariosmovilModel.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\UsuariosmovilModel')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\UsuariosmovilModel')
+ 4 APPPATH/Controllers/Usuariosmovil.php(37): spl_autoload_call('App\\Models\\UsuariosmovilModel')
+ 5 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Usuariosmovil->show('987594970&antoniozp02@gmail.com&recuperarcontrasena')
+ 6 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuariosmovil))
+ 7 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-16 04:02:59 --> syntax error, unexpected '}', expecting end of file
+in APPPATH/Models/UsuariosmovilModel.php on line 54.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('/home/app/public_html/panaderia/app/Models/UsuariosmovilModel.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\UsuariosmovilModel')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\UsuariosmovilModel')
+ 4 APPPATH/Controllers/Usuariosmovil.php(37): spl_autoload_call('App\\Models\\UsuariosmovilModel')
+ 5 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Usuariosmovil->show('987594970&antoniozp02@gmail.com&recuperarcontrasena')
+ 6 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuariosmovil))
+ 7 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-16 04:03:51 --> syntax error, unexpected '}', expecting end of file
+in APPPATH/Models/UsuariosmovilModel.php on line 54.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('/home/app/public_html/panaderia/app/Models/UsuariosmovilModel.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\UsuariosmovilModel')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\UsuariosmovilModel')
+ 4 APPPATH/Controllers/Usuariosmovil.php(37): spl_autoload_call('App\\Models\\UsuariosmovilModel')
+ 5 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Usuariosmovil->show('994980492&antoniozp02@gmail.com&recuperarcontrasena')
+ 6 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuariosmovil))
+ 7 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-16 04:04:09 --> syntax error, unexpected '}', expecting end of file
+in APPPATH/Models/UsuariosmovilModel.php on line 54.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('/home/app/public_html/panaderia/app/Models/UsuariosmovilModel.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\UsuariosmovilModel')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\UsuariosmovilModel')
+ 4 APPPATH/Controllers/Usuariosmovil.php(37): spl_autoload_call('App\\Models\\UsuariosmovilModel')
+ 5 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Usuariosmovil->show('987594970&antonio¿zp02@gmail.com&recuperarcontrasena')
+ 6 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuariosmovil))
+ 7 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-16 04:04:24 --> syntax error, unexpected '}', expecting end of file
+in APPPATH/Models/UsuariosmovilModel.php on line 54.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('/home/app/public_html/panaderia/app/Models/UsuariosmovilModel.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\UsuariosmovilModel')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\UsuariosmovilModel')
+ 4 APPPATH/Controllers/Usuariosmovil.php(37): spl_autoload_call('App\\Models\\UsuariosmovilModel')
+ 5 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Usuariosmovil->show('987594970&antoniozp02@gmail.com&recuperarcontrasena')
+ 6 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuariosmovil))
+ 7 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-16 04:04:40 --> syntax error, unexpected '}', expecting end of file
+in APPPATH/Models/UsuariosmovilModel.php on line 54.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('/home/app/public_html/panaderia/app/Models/UsuariosmovilModel.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\UsuariosmovilModel')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\UsuariosmovilModel')
+ 4 APPPATH/Controllers/Usuariosmovil.php(37): spl_autoload_call('App\\Models\\UsuariosmovilModel')
+ 5 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Usuariosmovil->show('productos')
+ 6 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuariosmovil))
+ 7 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-16 04:04:43 --> syntax error, unexpected '}', expecting end of file
+in APPPATH/Models/UsuariosmovilModel.php on line 54.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('/home/app/public_html/panaderia/app/Models/UsuariosmovilModel.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\UsuariosmovilModel')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\UsuariosmovilModel')
+ 4 APPPATH/Controllers/Usuariosmovil.php(37): spl_autoload_call('App\\Models\\UsuariosmovilModel')
+ 5 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Usuariosmovil->show('producto')
+ 6 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuariosmovil))
+ 7 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-16 04:05:19 --> syntax error, unexpected '}', expecting end of file
+in APPPATH/Models/UsuariosmovilModel.php on line 54.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('/home/app/public_html/panaderia/app/Models/UsuariosmovilModel.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\UsuariosmovilModel')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\UsuariosmovilModel')
+ 4 APPPATH/Controllers/Usuariosmovil.php(37): spl_autoload_call('App\\Models\\UsuariosmovilModel')
+ 5 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Usuariosmovil->show('producto')
+ 6 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuariosmovil))
+ 7 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-16 04:05:22 --> syntax error, unexpected '}', expecting end of file
+in APPPATH/Models/UsuariosmovilModel.php on line 54.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('/home/app/public_html/panaderia/app/Models/UsuariosmovilModel.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\UsuariosmovilModel')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\UsuariosmovilModel')
+ 4 APPPATH/Controllers/Usuariosmovil.php(37): spl_autoload_call('App\\Models\\UsuariosmovilModel')
+ 5 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Usuariosmovil->show('productos')
+ 6 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuariosmovil))
+ 7 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-16 04:05:39 --> syntax error, unexpected '}', expecting end of file
+in APPPATH/Models/UsuariosmovilModel.php on line 54.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('/home/app/public_html/panaderia/app/Models/UsuariosmovilModel.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\UsuariosmovilModel')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\UsuariosmovilModel')
+ 4 APPPATH/Controllers/Usuariosmovil.php(37): spl_autoload_call('App\\Models\\UsuariosmovilModel')
+ 5 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Usuariosmovil->show('994980492&antoniozp02@gmail.com&recuperarcontrasena')
+ 6 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuariosmovil))
+ 7 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

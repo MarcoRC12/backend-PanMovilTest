@@ -1,0 +1,39 @@
+ERROR - 2024-04-23 06:46:15 --> mysqli_sql_exception: Unknown column 'us_estado' in 'where clause' in /home/app/public_html/panaderia/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home/app/public_html/panaderia/system/Database/MySQLi/Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /home/app/public_html/panaderia/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /home/app/public_html/panaderia/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /home/app/public_html/panaderia/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /home/app/public_html/panaderia/system/Model.php(200): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/app/public_html/panaderia/system/BaseModel.php(557): CodeIgniter\Model->doFind(true, '8')
+#6 /home/app/public_html/panaderia/app/Controllers/Usuariosmovil.php(163): CodeIgniter\BaseModel->find('8')
+#7 /home/app/public_html/panaderia/system/CodeIgniter.php(934): App\Controllers\Usuariosmovil->delete('8')
+#8 /home/app/public_html/panaderia/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuariosmovil))
+#9 /home/app/public_html/panaderia/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /home/app/public_html/panaderia/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-04-23 06:46:15 --> Unknown column 'us_estado' in 'where clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 295.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(295): mysqli->query('SELECT *
+FROM `usuariosmovil`
+WHERE `us_estado` = 1
+AND `usuariosmovil`.`usumo_id` = \'8\'', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `usuariosmovil`
+WHERE `us_estado` = 1
+AND `usuariosmovil`.`usumo_id` = \'8\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `usuariosmovil`
+WHERE `us_estado` = 1
+AND `usuariosmovil`.`usumo_id` = \'8\'')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `usuariosmovil`
+WHERE `us_estado` = :us_estado:
+AND `usuariosmovil`.`usumo_id` = :usuariosmovil.usumo_id:', [...], false)
+ 5 SYSTEMPATH/Model.php(200): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(557): CodeIgniter\Model->doFind(true, '8')
+ 7 APPPATH/Controllers/Usuariosmovil.php(163): CodeIgniter\BaseModel->find('8')
+ 8 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Usuariosmovil->delete('8')
+ 9 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuariosmovil))
+10 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

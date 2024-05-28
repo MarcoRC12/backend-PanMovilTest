@@ -1,0 +1,30 @@
+CRITICAL - 2023-06-30 21:24:56 --> file(null): failed to open stream: No such file or directory
+in SYSTEMPATH/Validation/Validation.php on line 299.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file(null): failed to open stream: No such file or directory', '/home/app/public_html/panaderia/system/Validation/Validation.php', 299, [...])
+ 2 SYSTEMPATH/Validation/Validation.php(299): file('null')
+ 3 SYSTEMPATH/Validation/Validation.php(170): CodeIgniter\Validation\Validation->processRules('em_logo', 'em_logo', 'null', [...], [...])
+ 4 APPPATH/Controllers/Empresa.php(115): CodeIgniter\Validation\Validation->run()
+ 5 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Empresa->create()
+ 6 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 7 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-30 21:25:06 --> file(null): failed to open stream: No such file or directory
+in SYSTEMPATH/Validation/Validation.php on line 299.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file(null): failed to open stream: No such file or directory', '/home/app/public_html/panaderia/system/Validation/Validation.php', 299, [...])
+ 2 SYSTEMPATH/Validation/Validation.php(299): file('null')
+ 3 SYSTEMPATH/Validation/Validation.php(170): CodeIgniter\Validation\Validation->processRules('em_logo', 'em_logo', 'null', [...], [...])
+ 4 APPPATH/Controllers/Empresa.php(115): CodeIgniter\Validation\Validation->run()
+ 5 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Empresa->create()
+ 6 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 7 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-30 21:25:12 --> file(0): failed to open stream: No such file or directory
+in SYSTEMPATH/Validation/Validation.php on line 299.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file(0): failed to open stream: No such file or directory', '/home/app/public_html/panaderia/system/Validation/Validation.php', 299, [...])
+ 2 SYSTEMPATH/Validation/Validation.php(299): file('0')
+ 3 SYSTEMPATH/Validation/Validation.php(170): CodeIgniter\Validation\Validation->processRules('em_logo', 'em_logo', '0', [...], [...])
+ 4 APPPATH/Controllers/Empresa.php(115): CodeIgniter\Validation\Validation->run()
+ 5 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Empresa->create()
+ 6 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empresa))
+ 7 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

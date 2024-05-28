@@ -1,0 +1,12 @@
+CRITICAL - 2023-04-12 01:03:34 --> Class "App\Models\ClientesModel" not found
+in APPPATH\Controllers\Clientes.php on line 7.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Clientes->index()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clientes))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-04-12 01:03:53 --> Class "App\Models\ClientesModel" not found
+in APPPATH\Controllers\Clientes.php on line 7.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Clientes->index()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clientes))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

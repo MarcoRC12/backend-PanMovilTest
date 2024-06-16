@@ -1,52 +1,37 @@
 pipeline {
-	agent any
-	
-	stages {
-	
-	    stage('Preparation') {
-    	   steps {
-   	      		git 'https://github.com/MarcoRC12/backend-PanMovilTest.git'
-   	       		echo 'Pulled from github successfully'
-   	    	}
-    	}
-    	//Compila el codigo en formato ejecutable
-	    stage('Compile the code to executable format'){
-            steps{
-                sh 'mvn clean compile'
-                echo 'Convirtió el código legible por humanos a legible por máquina'
-            }
-        }
-        //compila los test y los ejecuta
-	    stage('Testing the code') {
-    	   steps {
-				sh 'mvn test'
-			  	echo 'Unit Test successfully'
-   	    	}
-    	}
-    	//Revisa la calidad de código
-    	stage('Code review to check quality of code') {
-            steps{
-                sh 'mvn pmd:pmd'
-                echo 'Code review done'
-            }
-        }
-        //Revisa la calidad de código con SonarQube
-        stage('Analysis SonarQube') {
-           steps {
-               	sh 'mvn sonar:sonar -Dsonar.login=sqp_5c4a7bec224bf27dbb4498a120e70b85b62e45e5 -Dsonar.projectKey=PanMovil -Dsonar.projectName="PanMovil" -Dsonar.host.url=localhost:9000'
-					withSonarQubeEnv() {
-						sh "./gradlew sonar"
-					}
-               	echo 'SonarQube Code review done'
-           }
-        }
-    	//Empaqueta el proyecto y lo dejará en taget/project-1.0-SNAPSHOT.jar
-    	stage('Build') {
-	       steps {
-			   sh 'mvn package -DskipTests'
-			   echo 'Packaging project'
-			}
-       	}
+    agent any
 
-	}
+    stages {
+        
+        stage('Preparacion'){
+            steps {
+                git 'git@github.com:joseht88/simple-php-website.git'
+   	       		echo 'Pulled from github successfully'
+            }
+        }
+        
+        stage('Verifica version php'){
+            steps {
+                sh 'php --version'
+            }
+        }
+
+        stage('Ejecutar php'){
+            steps {
+                sh 'php index.php'
+            }
+        }
+         //Revisa la calidad de código con SonarQube
+        //stage ('Sonarqube') {
+         //   steps {
+          //      script {
+           //         def scannerHome = tool name: 'sonarscanner', type: 'hudson.plugins.sonar.SonarRunnerInstallation';
+            //        echo "scannerHome = $scannerHome ...."
+             //       withSonarQubeEnv() {
+              //          sh "$scannerHome/bin/sonar-scanner"
+               //     }
+              //  }
+           // }
+       // }
+    }
 }

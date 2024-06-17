@@ -5,7 +5,7 @@ pipeline {
         
         stage('Preparacion'){
             steps {
-                git 'git@github.com:joseht88/simple-php-website.git'
+                git 'git@github.com:MarcoRC12/backend-PanMovilTest.git'
    	       		echo 'Pulled from github successfully'
             }
         }

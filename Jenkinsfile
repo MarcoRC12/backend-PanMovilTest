@@ -21,6 +21,8 @@ pipeline {
                 sh 'php index.php'
             }
         }
+
+        
          //Revisa la calidad de código con SonarQube
         //stage ('Sonarqube') {
          //   steps {
@@ -33,5 +35,11 @@ pipeline {
               //  }
            // }
        // }
+
+         stage('Docker Build') {
+            steps {
+                sh 'docker build -t  .'
+            }
+        }
     }
 }

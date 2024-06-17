@@ -1,7 +1,7 @@
 services:
    appphp:
     image: backend-panmovil
-    container_name: backen-panmovil
+    container_name: backend-panmovil
     #restart: always
     ports:
       - 80:80

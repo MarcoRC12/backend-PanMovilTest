@@ -5,7 +5,7 @@ pipeline {
         
         stage('Preparacion'){
             steps {
-                git branch: 'main', ssh: 'git@github.com:MarcoRC12/backend-PanMovilTest.git'
+                git 'git@github.com:MarcoRC12/backend-PanMovilTest.git'
    	       		echo 'Pulled from github successfully'
             }
         }

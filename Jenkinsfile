@@ -19,7 +19,7 @@ pipeline {
         
        stage('Docker Build') {
             steps {
-                sh 'docker build -t pancapp-backend .'
+                sh 'docker build -t backend-panmovil .'
             }
         }
 

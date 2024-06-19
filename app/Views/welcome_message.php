@@ -1,7 +1,7 @@
 <?php
 
 if($_SERVER["REQUEST_METHOD"] == "POST"){
-
+/*
 
 
 $curl = curl_init();
@@ -27,7 +27,7 @@ curl_setopt_array($curl, array(
 $response = curl_exec($curl);
 
 curl_close($curl);
-$datos = json_decode($response, true);
+$datos = json_decode($response, true);*/
 }
 ?>
 

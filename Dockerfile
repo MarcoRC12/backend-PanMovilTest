@@ -2,7 +2,9 @@ FROM php:7.4-apache
 
 RUN apt-get update
 RUN apt-get install --yes --force-yes cron g++ gettext libicu-dev openssl libc-client-dev libkrb5-dev libxml2-dev libfreetype6-dev libgd-dev libmcrypt-dev bzip2 libbz2-dev libtidy-dev libcurl4-openssl-dev libz-dev libmemcached-dev libxslt-dev
-RUN apt-get install php-intl
+RUN apt-get install -y zlib1g-dev libicu-dev g++ \
+&& docker-php-ext-configure intl \
+&& docker-php-ext-install intl
 
 RUN apt-get install -y tzdata
 ENV TZ America/Lima

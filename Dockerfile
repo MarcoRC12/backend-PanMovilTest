@@ -5,7 +5,6 @@ RUN apt-get install --yes --force-yes cron g++ gettext libicu-dev openssl libc-c
 RUN apt-get install -y zlib1g-dev libicu-dev g++ \
 && docker-php-ext-configure intl \
 && docker-php-ext-install intl
-RUN usermod -aG www-data ubuntu
 
 RUN apt-get install -y tzdata
 ENV TZ America/Lima

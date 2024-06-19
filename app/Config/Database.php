@@ -26,7 +26,7 @@ class Database extends Config
      */
     public array $default = [
         'DSN'      => '',
-        'hostname' => 'mariadb.cx0gww84kdwu.us-',
+        'hostname' => 'mariadb.cx0gww84kdwu.us-east-1.rds.amazonaws.com',
         'username' => 'admin',
         'password' => 'GwD8MD%E,*c0CEc#?',
         'database' => 'app_panaderia',

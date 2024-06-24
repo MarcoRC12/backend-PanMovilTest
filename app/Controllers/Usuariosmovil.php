@@ -158,7 +158,7 @@ class Usuariosmovil extends Controller{
         $model = new RegistrosModel();
         $registro = $model->where('estado', 1)->findAll();
                     $model = new UsuariosmovilModel();
-                    $usuarios = $model->where('us_estado',1)->find($id);
+                    $usuarios = $model->where('usumo_estado',1)->find($id);
                     if(!empty($usuarios)){
                         $datos = array("usumo_estado"=>0);
                         $usuarios = $model->update($id, $datos);
